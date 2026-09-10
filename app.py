@@ -20,6 +20,28 @@ from predict import (
 
 LOGGER = logging.getLogger(__name__)
 
+# ---------------------------------------------------------
+# Cloud Deployment Secrets & Earth Engine Bridge
+# ---------------------------------------------------------
+try:
+    if hasattr(st, "secrets"):
+        if "EARTHENGINE_PROJECT" in st.secrets:
+            os.environ["EARTHENGINE_PROJECT"] = str(st.secrets["EARTHENGINE_PROJECT"])
+
+        ee_creds = st.secrets.get("EE_CREDENTIALS") or st.secrets.get("EE_TOKEN")
+        if ee_creds:
+            cred_dir = os.path.expanduser("~/.config/earthengine")
+            os.makedirs(cred_dir, exist_ok=True)
+            cred_path = os.path.join(cred_dir, "credentials")
+            if not os.path.exists(cred_path):
+                with open(cred_path, "w", encoding="utf-8") as f:
+                    if isinstance(ee_creds, dict):
+                        json.dump(ee_creds, f)
+                    else:
+                        f.write(str(ee_creds).strip())
+except Exception as _sec_err:
+    LOGGER.warning("Could not sync cloud deployment secrets: %s", _sec_err)
+
 # Configure Streamlit page
 st.set_page_config(
     page_title="GeoSpectra | Manganese Exploration Intelligence",

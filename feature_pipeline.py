@@ -107,6 +107,13 @@ def initialize_gee(project_id: str = None) -> tuple[bool, str]:
         or os.environ.get("EARTH_ENGINE_PROJECT")
         or os.environ.get("GOOGLE_CLOUD_PROJECT")
     )
+    if not target_project:
+        try:
+            import streamlit as st
+            if hasattr(st, "secrets") and "EARTHENGINE_PROJECT" in st.secrets:
+                target_project = str(st.secrets["EARTHENGINE_PROJECT"])
+        except Exception:
+            pass
 
     try:
         if target_project:
