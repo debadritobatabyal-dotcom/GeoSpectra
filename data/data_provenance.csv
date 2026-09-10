@@ -1,0 +1,1166 @@
+sample_id,feature,value_source,source_url,access_date,status
+1,latitude/longitude,Balaghat Mine Subsidence Report (forestsclearance.nic.in); MOIL,https://forestsclearance.nic.in/writereaddata/FormA/Miningletter/111712131216T21YOSubsidencereportBalaghatmine.pdf,2026-09-05,REAL
+1,district/state,Balaghat Mine Subsidence Report (forestsclearance.nic.in); MOIL,https://forestsclearance.nic.in/writereaddata/FormA/Miningletter/111712131216T21YOSubsidencereportBalaghatmine.pdf,2026-09-05,REAL
+1,geological_group,Balaghat Mine Subsidence Report (forestsclearance.nic.in); MOIL,https://forestsclearance.nic.in/writereaddata/FormA/Miningletter/111712131216T21YOSubsidencereportBalaghatmine.pdf,2026-09-05,REAL
+1,formation,Balaghat Mine Subsidence Report (forestsclearance.nic.in); MOIL,https://forestsclearance.nic.in/writereaddata/FormA/Miningletter/111712131216T21YOSubsidencereportBalaghatmine.pdf,2026-09-05,REAL
+1,host_rock,Balaghat Mine Subsidence Report (forestsclearance.nic.in); MOIL,https://forestsclearance.nic.in/writereaddata/FormA/Miningletter/111712131216T21YOSubsidencereportBalaghatmine.pdf,2026-09-05,REAL
+1,ore_type,Balaghat Mine Subsidence Report (forestsclearance.nic.in); MOIL,https://forestsclearance.nic.in/writereaddata/FormA/Miningletter/111712131216T21YOSubsidencereportBalaghatmine.pdf,2026-09-05,REAL
+1,structural_notes,Balaghat Mine Subsidence Report (forestsclearance.nic.in); MOIL,https://forestsclearance.nic.in/writereaddata/FormA/Miningletter/111712131216T21YOSubsidencereportBalaghatmine.pdf,2026-09-05,REAL
+1,geological_age,Balaghat Mine Subsidence Report (forestsclearance.nic.in); MOIL,https://forestsclearance.nic.in/writereaddata/FormA/Miningletter/111712131216T21YOSubsidencereportBalaghatmine.pdf,2026-09-05,REAL
+1,metamorphic_grade,Balaghat Mine Subsidence Report (forestsclearance.nic.in); MOIL,https://forestsclearance.nic.in/writereaddata/FormA/Miningletter/111712131216T21YOSubsidencereportBalaghatmine.pdf,2026-09-05,REAL
+1,label_status,Balaghat Mine Subsidence Report (forestsclearance.nic.in); MOIL,https://forestsclearance.nic.in/writereaddata/FormA/Miningletter/111712131216T21YOSubsidencereportBalaghatmine.pdf,2026-09-05,REAL
+1,distance_to_nearest_known_mn_km,not applicable (positive sample),,2026-09-05,NOT_APPLICABLE
+2,latitude/longitude,Roy 1962 Econ Geol 57(2):195-208; mindat.org loc-359215; environmentclearance.nic.in EIA doc,https://www.mindat.org/loc-359215.html,2026-09-05,REAL
+2,district/state,Roy 1962 Econ Geol 57(2):195-208; mindat.org loc-359215; environmentclearance.nic.in EIA doc,https://www.mindat.org/loc-359215.html,2026-09-05,REAL
+2,geological_group,Roy 1962 Econ Geol 57(2):195-208; mindat.org loc-359215; environmentclearance.nic.in EIA doc,https://www.mindat.org/loc-359215.html,2026-09-05,REAL
+2,formation,Roy 1962 Econ Geol 57(2):195-208; mindat.org loc-359215; environmentclearance.nic.in EIA doc,https://www.mindat.org/loc-359215.html,2026-09-05,REAL
+2,host_rock,Roy 1962 Econ Geol 57(2):195-208; mindat.org loc-359215; environmentclearance.nic.in EIA doc,https://www.mindat.org/loc-359215.html,2026-09-05,REAL
+2,ore_type,Roy 1962 Econ Geol 57(2):195-208; mindat.org loc-359215; environmentclearance.nic.in EIA doc,https://www.mindat.org/loc-359215.html,2026-09-05,REAL
+2,structural_notes,Roy 1962 Econ Geol 57(2):195-208; mindat.org loc-359215; environmentclearance.nic.in EIA doc,https://www.mindat.org/loc-359215.html,2026-09-05,REAL
+2,geological_age,Roy 1962 Econ Geol 57(2):195-208; mindat.org loc-359215; environmentclearance.nic.in EIA doc,https://www.mindat.org/loc-359215.html,2026-09-05,REAL
+2,metamorphic_grade,Roy 1962 Econ Geol 57(2):195-208; mindat.org loc-359215; environmentclearance.nic.in EIA doc,https://www.mindat.org/loc-359215.html,2026-09-05,REAL
+2,label_status,Roy 1962 Econ Geol 57(2):195-208; mindat.org loc-359215; environmentclearance.nic.in EIA doc,https://www.mindat.org/loc-359215.html,2026-09-05,REAL
+2,distance_to_nearest_known_mn_km,not applicable (positive sample),,2026-09-05,NOT_APPLICABLE
+3,latitude/longitude,Wikipedia (Ukwa; MOIL); MOIL mine list,https://en.wikipedia.org/wiki/MOIL,2026-09-05,REAL
+3,district/state,Wikipedia (Ukwa; MOIL); MOIL mine list,https://en.wikipedia.org/wiki/MOIL,2026-09-05,REAL
+3,geological_group,Wikipedia (Ukwa; MOIL); MOIL mine list,https://en.wikipedia.org/wiki/MOIL,2026-09-05,REAL
+3,formation,Wikipedia (Ukwa; MOIL); MOIL mine list,https://en.wikipedia.org/wiki/MOIL,2026-09-05,REAL
+3,host_rock,Wikipedia (Ukwa; MOIL); MOIL mine list,https://en.wikipedia.org/wiki/MOIL,2026-09-05,REAL
+3,ore_type,Wikipedia (Ukwa; MOIL); MOIL mine list,https://en.wikipedia.org/wiki/MOIL,2026-09-05,REAL
+3,structural_notes,Wikipedia (Ukwa; MOIL); MOIL mine list,https://en.wikipedia.org/wiki/MOIL,2026-09-05,REAL
+3,geological_age,Wikipedia (Ukwa; MOIL); MOIL mine list,https://en.wikipedia.org/wiki/MOIL,2026-09-05,REAL
+3,metamorphic_grade,Wikipedia (Ukwa; MOIL); MOIL mine list,https://en.wikipedia.org/wiki/MOIL,2026-09-05,REAL
+3,label_status,Wikipedia (Ukwa; MOIL); MOIL mine list,https://en.wikipedia.org/wiki/MOIL,2026-09-05,REAL
+3,distance_to_nearest_known_mn_km,not applicable (positive sample),,2026-09-05,NOT_APPLICABLE
+4,latitude/longitude,"Wikipedia (Tirodi, Tirodi tehsil); Structural-Stratigraphic Relations paper (ResearchGate)",https://en.wikipedia.org/wiki/Tirodi,2026-09-05,REAL
+4,district/state,"Wikipedia (Tirodi, Tirodi tehsil); Structural-Stratigraphic Relations paper (ResearchGate)",https://en.wikipedia.org/wiki/Tirodi,2026-09-05,REAL
+4,geological_group,"Wikipedia (Tirodi, Tirodi tehsil); Structural-Stratigraphic Relations paper (ResearchGate)",https://en.wikipedia.org/wiki/Tirodi,2026-09-05,REAL
+4,formation,"Wikipedia (Tirodi, Tirodi tehsil); Structural-Stratigraphic Relations paper (ResearchGate)",https://en.wikipedia.org/wiki/Tirodi,2026-09-05,REAL
+4,host_rock,"Wikipedia (Tirodi, Tirodi tehsil); Structural-Stratigraphic Relations paper (ResearchGate)",https://en.wikipedia.org/wiki/Tirodi,2026-09-05,REAL
+4,ore_type,"Wikipedia (Tirodi, Tirodi tehsil); Structural-Stratigraphic Relations paper (ResearchGate)",https://en.wikipedia.org/wiki/Tirodi,2026-09-05,REAL
+4,structural_notes,"Wikipedia (Tirodi, Tirodi tehsil); Structural-Stratigraphic Relations paper (ResearchGate)",https://en.wikipedia.org/wiki/Tirodi,2026-09-05,REAL
+4,geological_age,"Wikipedia (Tirodi, Tirodi tehsil); Structural-Stratigraphic Relations paper (ResearchGate)",https://en.wikipedia.org/wiki/Tirodi,2026-09-05,REAL
+4,metamorphic_grade,"Wikipedia (Tirodi, Tirodi tehsil); Structural-Stratigraphic Relations paper (ResearchGate)",https://en.wikipedia.org/wiki/Tirodi,2026-09-05,REAL
+4,label_status,"Wikipedia (Tirodi, Tirodi tehsil); Structural-Stratigraphic Relations paper (ResearchGate)",https://en.wikipedia.org/wiki/Tirodi,2026-09-05,REAL
+4,distance_to_nearest_known_mn_km,not applicable (positive sample),,2026-09-05,NOT_APPLICABLE
+5,latitude/longitude,Mineragraphic Study of Kandri/Mansar/Beldongri/Satak Mines (scirp.org),https://file.scirp.org/Html/5-2800758_47118.htm,2026-09-05,REAL
+5,district/state,Mineragraphic Study of Kandri/Mansar/Beldongri/Satak Mines (scirp.org),https://file.scirp.org/Html/5-2800758_47118.htm,2026-09-05,REAL
+5,geological_group,Mineragraphic Study of Kandri/Mansar/Beldongri/Satak Mines (scirp.org),https://file.scirp.org/Html/5-2800758_47118.htm,2026-09-05,REAL
+5,formation,Mineragraphic Study of Kandri/Mansar/Beldongri/Satak Mines (scirp.org),https://file.scirp.org/Html/5-2800758_47118.htm,2026-09-05,REAL
+5,host_rock,Mineragraphic Study of Kandri/Mansar/Beldongri/Satak Mines (scirp.org),https://file.scirp.org/Html/5-2800758_47118.htm,2026-09-05,REAL
+5,ore_type,Mineragraphic Study of Kandri/Mansar/Beldongri/Satak Mines (scirp.org),https://file.scirp.org/Html/5-2800758_47118.htm,2026-09-05,REAL
+5,structural_notes,Mineragraphic Study of Kandri/Mansar/Beldongri/Satak Mines (scirp.org),https://file.scirp.org/Html/5-2800758_47118.htm,2026-09-05,REAL
+5,geological_age,Mineragraphic Study of Kandri/Mansar/Beldongri/Satak Mines (scirp.org),https://file.scirp.org/Html/5-2800758_47118.htm,2026-09-05,REAL
+5,metamorphic_grade,Mineragraphic Study of Kandri/Mansar/Beldongri/Satak Mines (scirp.org),https://file.scirp.org/Html/5-2800758_47118.htm,2026-09-05,REAL
+5,label_status,Mineragraphic Study of Kandri/Mansar/Beldongri/Satak Mines (scirp.org),https://file.scirp.org/Html/5-2800758_47118.htm,2026-09-05,REAL
+5,distance_to_nearest_known_mn_km,not applicable (positive sample),,2026-09-05,NOT_APPLICABLE
+6,latitude/longitude,"mindat.org loc-420990; Wikipedia (Mansar, India)",https://www.mindat.org/loc-420990.html,2026-09-05,REAL
+6,district/state,"mindat.org loc-420990; Wikipedia (Mansar, India)",https://www.mindat.org/loc-420990.html,2026-09-05,REAL
+6,geological_group,"mindat.org loc-420990; Wikipedia (Mansar, India)",https://www.mindat.org/loc-420990.html,2026-09-05,REAL
+6,formation,"mindat.org loc-420990; Wikipedia (Mansar, India)",https://www.mindat.org/loc-420990.html,2026-09-05,REAL
+6,host_rock,"mindat.org loc-420990; Wikipedia (Mansar, India)",https://www.mindat.org/loc-420990.html,2026-09-05,REAL
+6,ore_type,"mindat.org loc-420990; Wikipedia (Mansar, India)",https://www.mindat.org/loc-420990.html,2026-09-05,REAL
+6,structural_notes,"mindat.org loc-420990; Wikipedia (Mansar, India)",https://www.mindat.org/loc-420990.html,2026-09-05,REAL
+6,geological_age,"mindat.org loc-420990; Wikipedia (Mansar, India)",https://www.mindat.org/loc-420990.html,2026-09-05,REAL
+6,metamorphic_grade,"mindat.org loc-420990; Wikipedia (Mansar, India)",https://www.mindat.org/loc-420990.html,2026-09-05,REAL
+6,label_status,"mindat.org loc-420990; Wikipedia (Mansar, India)",https://www.mindat.org/loc-420990.html,2026-09-05,REAL
+6,distance_to_nearest_known_mn_km,not applicable (positive sample),,2026-09-05,NOT_APPLICABLE
+7,latitude/longitude,Mineragraphic Study of Kandri/Mansar/Beldongri/Satak Mines (scirp.org),https://file.scirp.org/Html/5-2800758_47118.htm,2026-09-05,REAL
+7,district/state,Mineragraphic Study of Kandri/Mansar/Beldongri/Satak Mines (scirp.org),https://file.scirp.org/Html/5-2800758_47118.htm,2026-09-05,REAL
+7,geological_group,Mineragraphic Study of Kandri/Mansar/Beldongri/Satak Mines (scirp.org),https://file.scirp.org/Html/5-2800758_47118.htm,2026-09-05,REAL
+7,formation,Mineragraphic Study of Kandri/Mansar/Beldongri/Satak Mines (scirp.org),https://file.scirp.org/Html/5-2800758_47118.htm,2026-09-05,REAL
+7,host_rock,Mineragraphic Study of Kandri/Mansar/Beldongri/Satak Mines (scirp.org),https://file.scirp.org/Html/5-2800758_47118.htm,2026-09-05,REAL
+7,ore_type,Mineragraphic Study of Kandri/Mansar/Beldongri/Satak Mines (scirp.org),https://file.scirp.org/Html/5-2800758_47118.htm,2026-09-05,REAL
+7,structural_notes,Mineragraphic Study of Kandri/Mansar/Beldongri/Satak Mines (scirp.org),https://file.scirp.org/Html/5-2800758_47118.htm,2026-09-05,REAL
+7,geological_age,Mineragraphic Study of Kandri/Mansar/Beldongri/Satak Mines (scirp.org),https://file.scirp.org/Html/5-2800758_47118.htm,2026-09-05,REAL
+7,metamorphic_grade,Mineragraphic Study of Kandri/Mansar/Beldongri/Satak Mines (scirp.org),https://file.scirp.org/Html/5-2800758_47118.htm,2026-09-05,REAL
+7,label_status,Mineragraphic Study of Kandri/Mansar/Beldongri/Satak Mines (scirp.org),https://file.scirp.org/Html/5-2800758_47118.htm,2026-09-05,REAL
+7,distance_to_nearest_known_mn_km,not applicable (positive sample),,2026-09-05,NOT_APPLICABLE
+8,latitude/longitude,Roy 1961 Proc. Natl. Inst. Sci. India 27A:108-114,,2026-09-05,REAL
+8,district/state,Roy 1961 Proc. Natl. Inst. Sci. India 27A:108-114,,2026-09-05,REAL
+8,geological_group,Roy 1961 Proc. Natl. Inst. Sci. India 27A:108-114,,2026-09-05,REAL
+8,formation,Roy 1961 Proc. Natl. Inst. Sci. India 27A:108-114,,2026-09-05,REAL
+8,host_rock,Roy 1961 Proc. Natl. Inst. Sci. India 27A:108-114,,2026-09-05,REAL
+8,ore_type,Roy 1961 Proc. Natl. Inst. Sci. India 27A:108-114,,2026-09-05,REAL
+8,structural_notes,Roy 1961 Proc. Natl. Inst. Sci. India 27A:108-114,,2026-09-05,REAL
+8,geological_age,Roy 1961 Proc. Natl. Inst. Sci. India 27A:108-114,,2026-09-05,REAL
+8,metamorphic_grade,Roy 1961 Proc. Natl. Inst. Sci. India 27A:108-114,,2026-09-05,REAL
+8,label_status,Roy 1961 Proc. Natl. Inst. Sci. India 27A:108-114,,2026-09-05,REAL
+8,distance_to_nearest_known_mn_km,not applicable (positive sample),,2026-09-05,NOT_APPLICABLE
+9,latitude/longitude,"Roy & Mitra 1962, Genesis of Mn Orebodies of Chikla-Sitasaongi Area",,2026-09-05,REAL
+9,district/state,"Roy & Mitra 1962, Genesis of Mn Orebodies of Chikla-Sitasaongi Area",,2026-09-05,REAL
+9,geological_group,"Roy & Mitra 1962, Genesis of Mn Orebodies of Chikla-Sitasaongi Area",,2026-09-05,REAL
+9,formation,"Roy & Mitra 1962, Genesis of Mn Orebodies of Chikla-Sitasaongi Area",,2026-09-05,REAL
+9,host_rock,"Roy & Mitra 1962, Genesis of Mn Orebodies of Chikla-Sitasaongi Area",,2026-09-05,REAL
+9,ore_type,"Roy & Mitra 1962, Genesis of Mn Orebodies of Chikla-Sitasaongi Area",,2026-09-05,REAL
+9,structural_notes,"Roy & Mitra 1962, Genesis of Mn Orebodies of Chikla-Sitasaongi Area",,2026-09-05,REAL
+9,geological_age,"Roy & Mitra 1962, Genesis of Mn Orebodies of Chikla-Sitasaongi Area",,2026-09-05,REAL
+9,metamorphic_grade,"Roy & Mitra 1962, Genesis of Mn Orebodies of Chikla-Sitasaongi Area",,2026-09-05,REAL
+9,label_status,"Roy & Mitra 1962, Genesis of Mn Orebodies of Chikla-Sitasaongi Area",,2026-09-05,REAL
+9,distance_to_nearest_known_mn_km,not applicable (positive sample),,2026-09-05,NOT_APPLICABLE
+10,latitude/longitude,Roy & Mitra 1962; Wikipedia (MOIL),https://en.wikipedia.org/wiki/MOIL,2026-09-05,REAL
+10,district/state,Roy & Mitra 1962; Wikipedia (MOIL),https://en.wikipedia.org/wiki/MOIL,2026-09-05,REAL
+10,geological_group,Roy & Mitra 1962; Wikipedia (MOIL),https://en.wikipedia.org/wiki/MOIL,2026-09-05,REAL
+10,formation,Roy & Mitra 1962; Wikipedia (MOIL),https://en.wikipedia.org/wiki/MOIL,2026-09-05,REAL
+10,host_rock,Roy & Mitra 1962; Wikipedia (MOIL),https://en.wikipedia.org/wiki/MOIL,2026-09-05,REAL
+10,ore_type,Roy & Mitra 1962; Wikipedia (MOIL),https://en.wikipedia.org/wiki/MOIL,2026-09-05,REAL
+10,structural_notes,Roy & Mitra 1962; Wikipedia (MOIL),https://en.wikipedia.org/wiki/MOIL,2026-09-05,REAL
+10,geological_age,Roy & Mitra 1962; Wikipedia (MOIL),https://en.wikipedia.org/wiki/MOIL,2026-09-05,REAL
+10,metamorphic_grade,Roy & Mitra 1962; Wikipedia (MOIL),https://en.wikipedia.org/wiki/MOIL,2026-09-05,REAL
+10,label_status,Roy & Mitra 1962; Wikipedia (MOIL),https://en.wikipedia.org/wiki/MOIL,2026-09-05,REAL
+10,distance_to_nearest_known_mn_km,not applicable (positive sample),,2026-09-05,NOT_APPLICABLE
+11,latitude/longitude,Roy 1959 Econ Geol 54:1556-1574; Wikipedia (Dongri Buzurg railway station); MOIL,https://en.wikipedia.org/wiki/Dongri_Buzurg_railway_station,2026-09-05,REAL
+11,district/state,Roy 1959 Econ Geol 54:1556-1574; Wikipedia (Dongri Buzurg railway station); MOIL,https://en.wikipedia.org/wiki/Dongri_Buzurg_railway_station,2026-09-05,REAL
+11,geological_group,Roy 1959 Econ Geol 54:1556-1574; Wikipedia (Dongri Buzurg railway station); MOIL,https://en.wikipedia.org/wiki/Dongri_Buzurg_railway_station,2026-09-05,REAL
+11,formation,Roy 1959 Econ Geol 54:1556-1574; Wikipedia (Dongri Buzurg railway station); MOIL,https://en.wikipedia.org/wiki/Dongri_Buzurg_railway_station,2026-09-05,REAL
+11,host_rock,Roy 1959 Econ Geol 54:1556-1574; Wikipedia (Dongri Buzurg railway station); MOIL,https://en.wikipedia.org/wiki/Dongri_Buzurg_railway_station,2026-09-05,REAL
+11,ore_type,Roy 1959 Econ Geol 54:1556-1574; Wikipedia (Dongri Buzurg railway station); MOIL,https://en.wikipedia.org/wiki/Dongri_Buzurg_railway_station,2026-09-05,REAL
+11,structural_notes,Roy 1959 Econ Geol 54:1556-1574; Wikipedia (Dongri Buzurg railway station); MOIL,https://en.wikipedia.org/wiki/Dongri_Buzurg_railway_station,2026-09-05,REAL
+11,geological_age,Roy 1959 Econ Geol 54:1556-1574; Wikipedia (Dongri Buzurg railway station); MOIL,https://en.wikipedia.org/wiki/Dongri_Buzurg_railway_station,2026-09-05,REAL
+11,metamorphic_grade,Roy 1959 Econ Geol 54:1556-1574; Wikipedia (Dongri Buzurg railway station); MOIL,https://en.wikipedia.org/wiki/Dongri_Buzurg_railway_station,2026-09-05,REAL
+11,label_status,Roy 1959 Econ Geol 54:1556-1574; Wikipedia (Dongri Buzurg railway station); MOIL,https://en.wikipedia.org/wiki/Dongri_Buzurg_railway_station,2026-09-05,REAL
+11,distance_to_nearest_known_mn_km,not applicable (positive sample),,2026-09-05,NOT_APPLICABLE
+12,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+12,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+12,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+13,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+13,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+13,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+14,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+14,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+14,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+15,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+15,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+15,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+16,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+16,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+16,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+17,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+17,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+17,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+18,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+18,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+18,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+19,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+19,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+19,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+20,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+20,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+20,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+21,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+21,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+21,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+22,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+22,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+22,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+23,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+23,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+23,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+24,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+24,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+24,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+25,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+25,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+25,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+26,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+26,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+26,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+27,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+27,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+27,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+28,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+28,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+28,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+29,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+29,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+29,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+30,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+30,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+30,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+31,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+31,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+31,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+32,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+32,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+32,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+33,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+33,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+33,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+34,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+34,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+34,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+35,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+35,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+35,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+36,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+36,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+36,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+37,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+37,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+37,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+38,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+38,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+38,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+39,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+39,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+39,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+40,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+40,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+40,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+41,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+41,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+41,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+42,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+42,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+42,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+43,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+43,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+43,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+44,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+44,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+44,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+45,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+45,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+45,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+46,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+46,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+46,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+47,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+47,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+47,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+48,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+48,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+48,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+49,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+49,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+49,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+50,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+50,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+50,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+51,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+51,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+51,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+52,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+52,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+52,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+53,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+53,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+53,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+54,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+54,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+54,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+55,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+55,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+55,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+56,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+56,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+56,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+57,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+57,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+57,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+58,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+58,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+58,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+59,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+59,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+59,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+60,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+60,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+60,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+61,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+61,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+61,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+62,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+62,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+62,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+63,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+63,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+63,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+64,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+64,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+64,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+65,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+65,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+65,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+66,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+66,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+66,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+67,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+67,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+67,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+68,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+68,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+68,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+69,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+69,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+69,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+70,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+70,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+70,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+71,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+71,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+71,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+72,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+72,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+72,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+73,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+73,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+73,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+74,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+74,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+74,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+75,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+75,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+75,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+76,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+76,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+76,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+77,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+77,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+77,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+78,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+78,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+78,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+79,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+79,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+79,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+80,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+80,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+80,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+81,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+81,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+81,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+82,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+82,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+82,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+83,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+83,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+83,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+84,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+84,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+84,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+85,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+85,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+85,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+86,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+86,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+86,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+87,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+87,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+87,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+88,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+88,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+88,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+89,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+89,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+89,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+90,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+90,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+90,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+91,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+91,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+91,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+92,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+92,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+92,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+93,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+93,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+93,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+94,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+94,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+94,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+95,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+95,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+95,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+96,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+96,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+96,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+97,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+97,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+97,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+98,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+98,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+98,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+99,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+99,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+99,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+100,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+100,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+100,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+101,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+101,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+101,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+102,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+102,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+102,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+103,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+103,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+103,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+104,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+104,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+104,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+105,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+105,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+105,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+106,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+106,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+106,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+107,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+107,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+107,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+108,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+108,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+108,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+109,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+109,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+109,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+110,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+110,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+110,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+111,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+111,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+111,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+112,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+112,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+112,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+113,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+113,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+113,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+114,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+114,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+114,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+115,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+115,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+115,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+116,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+116,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+116,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+117,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+117,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+117,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+118,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+118,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+118,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+119,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+119,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+119,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+120,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+120,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+120,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+121,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+121,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+121,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+122,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+122,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+122,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+123,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+123,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+123,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+124,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+124,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+124,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+125,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+125,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+125,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+126,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+126,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+126,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+127,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+127,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+127,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+128,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+128,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+128,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+129,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+129,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+129,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+130,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+130,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+130,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+131,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+131,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+131,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+132,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+132,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+132,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+133,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+133,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+133,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+134,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+134,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+134,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+135,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+135,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+135,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+136,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+136,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+136,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+137,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+137,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+137,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+138,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+138,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+138,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+139,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+139,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+139,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+140,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+140,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+140,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+141,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+141,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+141,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+142,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+142,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+142,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+143,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+143,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+143,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+144,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+144,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+144,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+145,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+145,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+145,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+146,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+146,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+146,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+147,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+147,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+147,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+148,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+148,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+148,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+149,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+149,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+149,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+150,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+150,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+150,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+151,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+151,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+151,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+152,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+152,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+152,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+153,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+153,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+153,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+154,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+154,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+154,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+155,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+155,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+155,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+156,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+156,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+156,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+157,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+157,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+157,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+158,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+158,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+158,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+159,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+159,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+159,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+160,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+160,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+160,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+161,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+161,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+161,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+162,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+162,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+162,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+163,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+163,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+163,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+164,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+164,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+164,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+165,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+165,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+165,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+166,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+166,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+166,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+167,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+167,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+167,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+168,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+168,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+168,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+169,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+169,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+169,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+170,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+170,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+170,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+171,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+171,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+171,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+172,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+172,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+172,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+173,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+173,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+173,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+174,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+174,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+174,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+175,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+175,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+175,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+176,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+176,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+176,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+177,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+177,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+177,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+178,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+178,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+178,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+179,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+179,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+179,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+180,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+180,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+180,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+181,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+181,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+181,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+182,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+182,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+182,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+183,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+183,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+183,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+184,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+184,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+184,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+185,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+185,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+185,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+186,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+186,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+186,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+187,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+187,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+187,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+188,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+188,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+188,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+189,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+189,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+189,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+190,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+190,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+190,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+191,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+191,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+191,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+192,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+192,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+192,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+193,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+193,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+193,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+194,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+194,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+194,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+195,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+195,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+195,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+196,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+196,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+196,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+197,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+197,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+197,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+198,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+198,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+198,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+199,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+199,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+199,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+200,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+200,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+200,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+201,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+201,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+201,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+202,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+202,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+202,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+203,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+203,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+203,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+204,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+204,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+204,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+205,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+205,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+205,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+206,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+206,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+206,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+207,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+207,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+207,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+208,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+208,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+208,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+209,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+209,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+209,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+210,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+210,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+210,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+211,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+211,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+211,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+212,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+212,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+212,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+213,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+213,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+213,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+214,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+214,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+214,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+215,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+215,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+215,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+216,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+216,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+216,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+217,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+217,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+217,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+218,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+218,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+218,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+219,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+219,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+219,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+220,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+220,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+220,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+221,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+221,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+221,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+222,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+222,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+222,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+223,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+223,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+223,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+224,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+224,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+224,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+225,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+225,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+225,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+226,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+226,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+226,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+227,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+227,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+227,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+228,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+228,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+228,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+229,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+229,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+229,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+230,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+230,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+230,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+231,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+231,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+231,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+232,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+232,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+232,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+233,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+233,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+233,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+234,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+234,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+234,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+235,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+235,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+235,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+236,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+236,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+236,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+237,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+237,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+237,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+238,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+238,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+238,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+239,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+239,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+239,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+240,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+240,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+240,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+241,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+241,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+241,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+242,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+242,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+242,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+243,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+243,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+243,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+244,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+244,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+244,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+245,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+245,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+245,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+246,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+246,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+246,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+247,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+247,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+247,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+248,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+248,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+248,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+249,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+249,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+249,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+250,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+250,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+250,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+251,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+251,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+251,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+252,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+252,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+252,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+253,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+253,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+253,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+254,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+254,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+254,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+255,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+255,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+255,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+256,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+256,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+256,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+257,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+257,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+257,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+258,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+258,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+258,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+259,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+259,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+259,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+260,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+260,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+260,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+261,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+261,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+261,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+262,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+262,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+262,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+263,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+263,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+263,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+264,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+264,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+264,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+265,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+265,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+265,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+266,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+266,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+266,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+267,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+267,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+267,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+268,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+268,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+268,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+269,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+269,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+269,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+270,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+270,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+270,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+271,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+271,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+271,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+272,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+272,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+272,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+273,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+273,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+273,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+274,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+274,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+274,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+275,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+275,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+275,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+276,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+276,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+276,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+277,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+277,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+277,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+278,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+278,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+278,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+279,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+279,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+279,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+280,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+280,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+280,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+281,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+281,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+281,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+282,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+282,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+282,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+283,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+283,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+283,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+284,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+284,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+284,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+285,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+285,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+285,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+286,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+286,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+286,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+287,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+287,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+287,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+288,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+288,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+288,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+289,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+289,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+289,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+290,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+290,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+290,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+291,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+291,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+291,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+292,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+292,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+292,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+293,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+293,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+293,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+294,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+294,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+294,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+295,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+295,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+295,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+296,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+296,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+296,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+297,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+297,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+297,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+298,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+298,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+298,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+299,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+299,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+299,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+300,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+300,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+300,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+301,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+301,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+301,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+302,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+302,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+302,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+303,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+303,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+303,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+304,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+304,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+304,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+305,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+305,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+305,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+306,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+306,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+306,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+307,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+307,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+307,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+308,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+308,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+308,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+309,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+309,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+309,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+310,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+310,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+310,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+311,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+311,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+311,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+312,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+312,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+312,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+313,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+313,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+313,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+314,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+314,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+314,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+315,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+315,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+315,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+316,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+316,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+316,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+317,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+317,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+317,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+318,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+318,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+318,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+319,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+319,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+319,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+320,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+320,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+320,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+321,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+321,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+321,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+322,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+322,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+322,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+323,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+323,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+323,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+324,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+324,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+324,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+325,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+325,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+325,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+326,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+326,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+326,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+327,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+327,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+327,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+328,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+328,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+328,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+329,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+329,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+329,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+330,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+330,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+330,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+331,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+331,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+331,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+332,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+332,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+332,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+333,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+333,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+333,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+334,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+334,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+334,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+335,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+335,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+335,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+336,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+336,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+336,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+337,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+337,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+337,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+338,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+338,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+338,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+339,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+339,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+339,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+340,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+340,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+340,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+341,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+341,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+341,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+342,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+342,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+342,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+343,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+343,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+343,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+344,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+344,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+344,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+345,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+345,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+345,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+346,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+346,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+346,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+347,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+347,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+347,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+348,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+348,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+348,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+349,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+349,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+349,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+350,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+350,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+350,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+351,latitude/longitude,"Generated regular grid, this session (real coordinates, no attribute fabricated)",,2026-09-05,REAL_DERIVED
+351,distance_to_nearest_known_mn_km,Haversine distance computed from documented positive coordinates above,,2026-09-05,DERIVED
+351,label_status,"No documented occurrence found - treated as UNLABELLED, not negative",,2026-09-05,REAL
+ALL,elevation_m,Attempted Open-Elevation API (api.open-elevation.com) -> HTTP 500 (service unavailable); attempted Open-Meteo API (api.open-meteo.com) -> blocked by robots.txt; no authenticated access to GEE/Copernicus/Bhukosh-NGDR in this session,https://api.open-elevation.com/ ; https://api.open-meteo.com/,2026-09-05,NOT_AVAILABLE
+ALL,slope_deg,Attempted Open-Elevation API (api.open-elevation.com) -> HTTP 500 (service unavailable); attempted Open-Meteo API (api.open-meteo.com) -> blocked by robots.txt; no authenticated access to GEE/Copernicus/Bhukosh-NGDR in this session,https://api.open-elevation.com/ ; https://api.open-meteo.com/,2026-09-05,NOT_AVAILABLE
+ALL,aspect_deg,Attempted Open-Elevation API (api.open-elevation.com) -> HTTP 500 (service unavailable); attempted Open-Meteo API (api.open-meteo.com) -> blocked by robots.txt; no authenticated access to GEE/Copernicus/Bhukosh-NGDR in this session,https://api.open-elevation.com/ ; https://api.open-meteo.com/,2026-09-05,NOT_AVAILABLE
+ALL,curvature,Attempted Open-Elevation API (api.open-elevation.com) -> HTTP 500 (service unavailable); attempted Open-Meteo API (api.open-meteo.com) -> blocked by robots.txt; no authenticated access to GEE/Copernicus/Bhukosh-NGDR in this session,https://api.open-elevation.com/ ; https://api.open-meteo.com/,2026-09-05,NOT_AVAILABLE
+ALL,drainage_density,Attempted Open-Elevation API (api.open-elevation.com) -> HTTP 500 (service unavailable); attempted Open-Meteo API (api.open-meteo.com) -> blocked by robots.txt; no authenticated access to GEE/Copernicus/Bhukosh-NGDR in this session,https://api.open-elevation.com/ ; https://api.open-meteo.com/,2026-09-05,NOT_AVAILABLE
+ALL,fault_lineament_distance_km,Attempted Open-Elevation API (api.open-elevation.com) -> HTTP 500 (service unavailable); attempted Open-Meteo API (api.open-meteo.com) -> blocked by robots.txt; no authenticated access to GEE/Copernicus/Bhukosh-NGDR in this session,https://api.open-elevation.com/ ; https://api.open-meteo.com/,2026-09-05,NOT_AVAILABLE
+ALL,lineament_density_per_sqkm,Attempted Open-Elevation API (api.open-elevation.com) -> HTTP 500 (service unavailable); attempted Open-Meteo API (api.open-meteo.com) -> blocked by robots.txt; no authenticated access to GEE/Copernicus/Bhukosh-NGDR in this session,https://api.open-elevation.com/ ; https://api.open-meteo.com/,2026-09-05,NOT_AVAILABLE
+ALL,structural_intersection_flag,Attempted Open-Elevation API (api.open-elevation.com) -> HTTP 500 (service unavailable); attempted Open-Meteo API (api.open-meteo.com) -> blocked by robots.txt; no authenticated access to GEE/Copernicus/Bhukosh-NGDR in this session,https://api.open-elevation.com/ ; https://api.open-meteo.com/,2026-09-05,NOT_AVAILABLE
+ALL,s2_B2,Attempted Open-Elevation API (api.open-elevation.com) -> HTTP 500 (service unavailable); attempted Open-Meteo API (api.open-meteo.com) -> blocked by robots.txt; no authenticated access to GEE/Copernicus/Bhukosh-NGDR in this session,https://api.open-elevation.com/ ; https://api.open-meteo.com/,2026-09-05,NOT_AVAILABLE
+ALL,s2_B3,Attempted Open-Elevation API (api.open-elevation.com) -> HTTP 500 (service unavailable); attempted Open-Meteo API (api.open-meteo.com) -> blocked by robots.txt; no authenticated access to GEE/Copernicus/Bhukosh-NGDR in this session,https://api.open-elevation.com/ ; https://api.open-meteo.com/,2026-09-05,NOT_AVAILABLE
+ALL,s2_B4,Attempted Open-Elevation API (api.open-elevation.com) -> HTTP 500 (service unavailable); attempted Open-Meteo API (api.open-meteo.com) -> blocked by robots.txt; no authenticated access to GEE/Copernicus/Bhukosh-NGDR in this session,https://api.open-elevation.com/ ; https://api.open-meteo.com/,2026-09-05,NOT_AVAILABLE
+ALL,s2_B5,Attempted Open-Elevation API (api.open-elevation.com) -> HTTP 500 (service unavailable); attempted Open-Meteo API (api.open-meteo.com) -> blocked by robots.txt; no authenticated access to GEE/Copernicus/Bhukosh-NGDR in this session,https://api.open-elevation.com/ ; https://api.open-meteo.com/,2026-09-05,NOT_AVAILABLE
+ALL,s2_B6,Attempted Open-Elevation API (api.open-elevation.com) -> HTTP 500 (service unavailable); attempted Open-Meteo API (api.open-meteo.com) -> blocked by robots.txt; no authenticated access to GEE/Copernicus/Bhukosh-NGDR in this session,https://api.open-elevation.com/ ; https://api.open-meteo.com/,2026-09-05,NOT_AVAILABLE
+ALL,s2_B7,Attempted Open-Elevation API (api.open-elevation.com) -> HTTP 500 (service unavailable); attempted Open-Meteo API (api.open-meteo.com) -> blocked by robots.txt; no authenticated access to GEE/Copernicus/Bhukosh-NGDR in this session,https://api.open-elevation.com/ ; https://api.open-meteo.com/,2026-09-05,NOT_AVAILABLE
+ALL,s2_B8,Attempted Open-Elevation API (api.open-elevation.com) -> HTTP 500 (service unavailable); attempted Open-Meteo API (api.open-meteo.com) -> blocked by robots.txt; no authenticated access to GEE/Copernicus/Bhukosh-NGDR in this session,https://api.open-elevation.com/ ; https://api.open-meteo.com/,2026-09-05,NOT_AVAILABLE
+ALL,s2_B8A,Attempted Open-Elevation API (api.open-elevation.com) -> HTTP 500 (service unavailable); attempted Open-Meteo API (api.open-meteo.com) -> blocked by robots.txt; no authenticated access to GEE/Copernicus/Bhukosh-NGDR in this session,https://api.open-elevation.com/ ; https://api.open-meteo.com/,2026-09-05,NOT_AVAILABLE
+ALL,s2_B11,Attempted Open-Elevation API (api.open-elevation.com) -> HTTP 500 (service unavailable); attempted Open-Meteo API (api.open-meteo.com) -> blocked by robots.txt; no authenticated access to GEE/Copernicus/Bhukosh-NGDR in this session,https://api.open-elevation.com/ ; https://api.open-meteo.com/,2026-09-05,NOT_AVAILABLE
+ALL,s2_B12,Attempted Open-Elevation API (api.open-elevation.com) -> HTTP 500 (service unavailable); attempted Open-Meteo API (api.open-meteo.com) -> blocked by robots.txt; no authenticated access to GEE/Copernicus/Bhukosh-NGDR in this session,https://api.open-elevation.com/ ; https://api.open-meteo.com/,2026-09-05,NOT_AVAILABLE
+ALL,ndvi,Attempted Open-Elevation API (api.open-elevation.com) -> HTTP 500 (service unavailable); attempted Open-Meteo API (api.open-meteo.com) -> blocked by robots.txt; no authenticated access to GEE/Copernicus/Bhukosh-NGDR in this session,https://api.open-elevation.com/ ; https://api.open-meteo.com/,2026-09-05,NOT_AVAILABLE
+ALL,ndmi,Attempted Open-Elevation API (api.open-elevation.com) -> HTTP 500 (service unavailable); attempted Open-Meteo API (api.open-meteo.com) -> blocked by robots.txt; no authenticated access to GEE/Copernicus/Bhukosh-NGDR in this session,https://api.open-elevation.com/ ; https://api.open-meteo.com/,2026-09-05,NOT_AVAILABLE
+ALL,bsi,Attempted Open-Elevation API (api.open-elevation.com) -> HTTP 500 (service unavailable); attempted Open-Meteo API (api.open-meteo.com) -> blocked by robots.txt; no authenticated access to GEE/Copernicus/Bhukosh-NGDR in this session,https://api.open-elevation.com/ ; https://api.open-meteo.com/,2026-09-05,NOT_AVAILABLE
+ALL,iron_oxide_index,Attempted Open-Elevation API (api.open-elevation.com) -> HTTP 500 (service unavailable); attempted Open-Meteo API (api.open-meteo.com) -> blocked by robots.txt; no authenticated access to GEE/Copernicus/Bhukosh-NGDR in this session,https://api.open-elevation.com/ ; https://api.open-meteo.com/,2026-09-05,NOT_AVAILABLE
+ALL,s1_VV,Attempted Open-Elevation API (api.open-elevation.com) -> HTTP 500 (service unavailable); attempted Open-Meteo API (api.open-meteo.com) -> blocked by robots.txt; no authenticated access to GEE/Copernicus/Bhukosh-NGDR in this session,https://api.open-elevation.com/ ; https://api.open-meteo.com/,2026-09-05,NOT_AVAILABLE
+ALL,s1_VH,Attempted Open-Elevation API (api.open-elevation.com) -> HTTP 500 (service unavailable); attempted Open-Meteo API (api.open-meteo.com) -> blocked by robots.txt; no authenticated access to GEE/Copernicus/Bhukosh-NGDR in this session,https://api.open-elevation.com/ ; https://api.open-meteo.com/,2026-09-05,NOT_AVAILABLE

@@ -1,0 +1,31 @@
+target_id,latitude,longitude,prospectivity_score,prospectivity_class,formation,lithology,nearest_mine,nearest_mine_dist_km,is_greenfield,occurrence_status
+GST-01,21.9712,80.4609,100.0,VERY HIGH,Mansar Formation,Phyllite and muscovite schist/gneiss with manganese-oxide/gondite horizon,Ukwa Mine (MOIL),1.0,False,Near Ukwa Mine (MOIL) (1.0 km)
+GST-02,21.6747,79.7332,100.0,VERY HIGH,Mansar Formation,Phyllite and muscovite schist/gneiss with manganese-oxide/gondite horizon,"Tirodi Mine (MOIL, opencast)",1.2,False,"Near Tirodi Mine (MOIL, opencast) (1.2 km)"
+GST-03,21.7114,79.8566,100.0,VERY HIGH,Mansar Formation,Phyllite and muscovite schist/gneiss with manganese-oxide/gondite horizon,"Tirodi Mine (MOIL, opencast)",13.7,True,Undiscovered / Greenfield
+GST-04,21.5401,79.6839,99.9,VERY HIGH,Junewani Formation,Biotite-muscovite schist/gneiss and biotite granulite,"Dongri Buzurg Mine (MOIL, opencast)",1.5,False,"Near Dongri Buzurg Mine (MOIL, opencast) (1.5 km)"
+GST-05,21.701,79.7285,99.9,VERY HIGH,Mansar Formation,Phyllite and muscovite schist/gneiss with manganese-oxide/gondite horizon,"Tirodi Mine (MOIL, opencast)",1.9,False,"Near Tirodi Mine (MOIL, opencast) (1.9 km)"
+GST-06,21.9813,80.4838,99.9,VERY HIGH,Chorbaoli Formation,Quartz-mica schist and quartzite,Ukwa Mine (MOIL),1.9,False,Near Ukwa Mine (MOIL) (1.9 km)
+GST-07,21.5472,79.7392,99.9,VERY HIGH,Mansar Formation,Phyllite and muscovite schist/gneiss with manganese-oxide/gondite horizon,"Dongri Buzurg Mine (MOIL, opencast)",4.7,False,"Near Dongri Buzurg Mine (MOIL, opencast) (4.7 km)"
+GST-08,21.5532,79.7058,99.9,VERY HIGH,Mansar Formation,Phyllite and muscovite schist/gneiss with manganese-oxide/gondite horizon,"Dongri Buzurg Mine (MOIL, opencast)",1.3,False,"Near Dongri Buzurg Mine (MOIL, opencast) (1.3 km)"
+GST-09,21.9568,80.4816,99.8,VERY HIGH,Mansar Formation,Phyllite and muscovite schist/gneiss with manganese-oxide/gondite horizon,Ukwa Mine (MOIL),1.9,False,Near Ukwa Mine (MOIL) (1.9 km)
+GST-10,21.828,80.2329,99.8,VERY HIGH,Mansar Formation,Phyllite and muscovite schist/gneiss with manganese-oxide/gondite horizon,Balaghat Mine (MOIL),0.6,False,Near Balaghat Mine (MOIL) (0.6 km)
+GST-11,21.6803,79.7096,99.4,VERY HIGH,Mansar Formation,Phyllite and muscovite schist/gneiss with manganese-oxide/gondite horizon,"Tirodi Mine (MOIL, opencast)",1.8,False,"Near Tirodi Mine (MOIL, opencast) (1.8 km)"
+GST-12,21.8544,80.2325,99.2,VERY HIGH,Mansar Formation,Phyllite and muscovite schist/gneiss with manganese-oxide/gondite horizon,"Bharveli (Bharweli) Mine, Awalajhari (MOIL)",1.6,False,"Near Bharveli (Bharweli) Mine, Awalajhari (MOIL) (1.6 km)"
+GST-13,21.7899,80.1848,98.8,VERY HIGH,Mansar Formation,Phyllite and muscovite schist/gneiss with manganese-oxide/gondite horizon,Balaghat Mine (MOIL),7.0,True,Undiscovered / Greenfield
+GST-14,21.8152,80.1903,98.3,VERY HIGH,Mansar Formation,Phyllite and muscovite schist/gneiss with manganese-oxide/gondite horizon,Balaghat Mine (MOIL),4.9,False,Near Balaghat Mine (MOIL) (4.9 km)
+GST-15,21.7337,79.841,97.5,VERY HIGH,Mansar Formation,Phyllite and muscovite schist/gneiss with manganese-oxide/gondite horizon,"Tirodi Mine (MOIL, opencast)",13.0,True,Undiscovered / Greenfield
+GST-16,21.5668,79.7262,97.1,VERY HIGH,Sitasaongi Formation,Quartz-muscovite schist and gneiss,"Dongri Buzurg Mine (MOIL, opencast)",3.8,False,"Near Dongri Buzurg Mine (MOIL, opencast) (3.8 km)"
+GST-17,21.5369,79.764,97.1,VERY HIGH,Chorbaoli Formation,Quartz-mica schist and quartzite,"Dongri Buzurg Mine (MOIL, opencast)",7.4,True,Undiscovered / Greenfield
+GST-18,21.842,80.2082,96.1,VERY HIGH,Junewani Formation,,"Bharveli (Bharweli) Mine, Awalajhari (MOIL)",2.4,False,"Near Bharveli (Bharweli) Mine, Awalajhari (MOIL) (2.4 km)"
+GST-19,21.5673,79.7543,95.8,VERY HIGH,Lohangi Formation,"Marble, calc-silicate rock, granulite/gneiss","Dongri Buzurg Mine (MOIL, opencast)",6.5,True,Undiscovered / Greenfield
+GST-20,21.5666,79.6797,95.2,VERY HIGH,Chorbaoli Formation,Quartz-mica schist and quartzite,"Dongri Buzurg Mine (MOIL, opencast)",2.4,False,"Near Dongri Buzurg Mine (MOIL, opencast) (2.4 km)"
+GST-21,21.6879,79.7539,94.3,VERY HIGH,Mansar Formation,Phyllite and muscovite schist/gneiss with manganese-oxide/gondite horizon,"Tirodi Mine (MOIL, opencast)",2.8,False,"Near Tirodi Mine (MOIL, opencast) (2.8 km)"
+GST-22,21.8067,80.1662,94.3,VERY HIGH,Mansar Formation,Phyllite and muscovite schist/gneiss with manganese-oxide/gondite horizon,Balaghat Mine (MOIL),7.5,True,Undiscovered / Greenfield
+GST-23,21.8014,80.215,92.4,VERY HIGH,Mansar Formation,Phyllite and muscovite schist/gneiss with manganese-oxide/gondite horizon,Balaghat Mine (MOIL),4.0,False,Near Balaghat Mine (MOIL) (4.0 km)
+GST-24,21.8425,80.1816,89.9,VERY HIGH,Mansar Formation,Phyllite and muscovite schist/gneiss with manganese-oxide/gondite horizon,"Bharveli (Bharweli) Mine, Awalajhari (MOIL)",5.1,True,Undiscovered / Greenfield
+GST-25,21.7759,80.1636,89.8,VERY HIGH,Mansar Formation,Phyllite and muscovite schist/gneiss with manganese-oxide/gondite horizon,Balaghat Mine (MOIL),9.6,True,Undiscovered / Greenfield
+GST-26,21.5382,79.7885,89.5,VERY HIGH,Mansar Formation,Phyllite and muscovite schist/gneiss with manganese-oxide/gondite horizon,"Dongri Buzurg Mine (MOIL, opencast)",9.9,True,Undiscovered / Greenfield
+GST-27,21.656,79.708,89.0,VERY HIGH,Mansar Formation,Phyllite and muscovite schist/gneiss with manganese-oxide/gondite horizon,"Tirodi Mine (MOIL, opencast)",3.7,False,"Near Tirodi Mine (MOIL, opencast) (3.7 km)"
+GST-28,21.6889,79.8584,88.9,VERY HIGH,Sitasaongi Formation,Quartz-muscovite schist and gneiss,"Tirodi Mine (MOIL, opencast)",13.6,True,Undiscovered / Greenfield
+GST-29,21.5641,79.7813,88.9,VERY HIGH,Mansar Formation,Phyllite and muscovite schist/gneiss with manganese-oxide/gondite horizon,"Dongri Buzurg Mine (MOIL, opencast)",9.2,True,Undiscovered / Greenfield
+GST-30,21.6863,79.779,88.7,VERY HIGH,Lohangi Formation,"Marble, calc-silicate rock, granulite/gneiss","Tirodi Mine (MOIL, opencast)",5.4,True,Undiscovered / Greenfield

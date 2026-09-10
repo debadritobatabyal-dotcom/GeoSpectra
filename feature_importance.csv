@@ -1,0 +1,44 @@
+feature,domain,importance,importance_pct
+latitude,Spatial Coordinates,0.195174,52.37
+longitude,Spatial Coordinates,0.080681,21.649
+geological_group,Geological Map (GSI),0.032854,8.815
+stratigraphic_unit,Geological Map (GSI),0.021781,5.844
+BSI,Sentinel-2 Optical & Indices,0.00769,2.063
+elevation_m,Terrain & DEM,0.005532,1.484
+B4,Sentinel-2 Optical & Indices,0.004559,1.223
+lithology,Geological Map (GSI),0.004286,1.15
+geological_formation,Geological Map (GSI),0.003661,0.982
+red_edge_ratio_1,Sentinel-2 Optical & Indices,0.003604,0.967
+NDMI,Sentinel-2 Optical & Indices,0.002905,0.779
+red_edge_ratio_2,Sentinel-2 Optical & Indices,0.002598,0.697
+B11_B12_ratio,Sentinel-2 Optical & Indices,0.002408,0.646
+slope_deg,Terrain & DEM,0.001991,0.534
+structural_orientation,Geological Map (GSI),0.001558,0.418
+B3,Sentinel-2 Optical & Indices,0.000706,0.19
+B2,Sentinel-2 Optical & Indices,0.000383,0.103
+B6,Sentinel-2 Optical & Indices,8.4e-05,0.022
+valley_or_ridge_class,Terrain & DEM,7.8e-05,0.021
+metamorphic_grade,Geological Map (GSI),6.1e-05,0.016
+VH,Sentinel-1 SAR Radar,5.5e-05,0.015
+VV,Sentinel-1 SAR Radar,2.7e-05,0.007
+B8A,Sentinel-2 Optical & Indices,1e-05,0.003
+weathering_class,Geological Map (GSI),0.0,0.0
+curvature,Terrain & DEM,0.0,0.0
+fold_position,Geological Map (GSI),0.0,0.0
+topographic_position_index,Terrain & DEM,0.0,0.0
+local_relief_m,Terrain & DEM,0.0,0.0
+terrain_ruggedness,Terrain & DEM,0.0,0.0
+B5,Sentinel-2 Optical & Indices,0.0,0.0
+B11,Sentinel-2 Optical & Indices,0.0,0.0
+B7,Sentinel-2 Optical & Indices,0.0,0.0
+radar_texture,Sentinel-1 SAR Radar,0.0,0.0
+B12,Sentinel-2 Optical & Indices,0.0,0.0
+VV_VH_ratio,Sentinel-1 SAR Radar,0.0,0.0
+B8,Sentinel-2 Optical & Indices,0.0,0.0
+gossan_alteration_index,Sentinel-2 Optical & Indices,0.0,0.0
+B11_B8_ratio,Sentinel-2 Optical & Indices,0.0,0.0
+B12_B8_ratio,Sentinel-2 Optical & Indices,0.0,0.0
+B4_B2_ratio,Sentinel-2 Optical & Indices,0.0,0.0
+MNDWI,Sentinel-2 Optical & Indices,0.0,0.0
+NDVI,Sentinel-2 Optical & Indices,0.0,0.0
+radar_backscatter_mean,Sentinel-1 SAR Radar,0.0,0.0

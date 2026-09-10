@@ -1,0 +1,103 @@
+feature_name,category,data_type,unit_or_scale,description,tier,ml_usage_note
+sample_id,Location,string,-,Unique synthetic sample identifier (SAU-000001 ...).,support - identifier,identifier - exclude from model input
+latitude,Location,float,decimal degrees (WGS84),Synthetic sample latitude within the Sausar-belt study region.,support + core feature,yes (or derive spatial features)
+longitude,Location,float,decimal degrees (WGS84),Synthetic sample longitude within the Sausar-belt study region.,support + core feature,yes (or derive spatial features)
+spatial_block_id,Location,string,-,0.05 deg (~5.5 km) grid-block ID; use for spatial blocking / spatial CV folds.,support - spatial CV group,"use for grouping only, never as a raw feature"
+regional_zone_id,Location,string,-,10-cluster KMeans regional zone ID (spatial); use for spatial cross-validation.,support - spatial CV group,"use for grouping only, never as a raw feature"
+label_status,Label,string (categorical),POSITIVE / UNLABELLED / UNCERTAIN,Primary PU-learning-style label reflecting real exploration-data status.,support - target,target (PU-learning)
+manganese_associated,Label,string (categorical),associated / not_documented / ambiguous,Domain-framed restatement of label_status.,support - target (alternate framing),target (alternative framing)
+data_quality_flag,Support,string (categorical),-,Row-level QC flag: 'ok' or 'value_corrected_physical_bound' if any raw field on that row was clipped during the audit pass (see feature_audit file) because the documented outlier-injection mechanism had pushed it past a physically possible bound.,support - QC,exclude from model input; optional sample-weighting/QC signal
+feature_distribution_distance,OOD support,float,Mahalanobis-like distance (>=0),Distance of the sample's feature vector from the overall training-feature centroid/covariance. Use only for the OUT-OF-STUDY-DOMAIN / LOW-APPLICABILITY check.,support - OOD only,exclude from prospectivity feature set; use only in a separate OOD/applicability-domain module
+distance_to_nearest_known_manganese_occurrence_km,Location,float,km,Euclidean distance to nearest documented MOIL mine / manganese occurrence used as a spatial anchor.,core,yes
+geological_group,Geology,string (categorical),-,Sausar Group / Tirodi Gneissic Complex / Amgaon Gneissic Complex / Marginal cover.,core,yes (one-hot)
+geological_formation,Geology,string (categorical),-,"Specific formation (Sitasaongi, Lohangi, Mansar, Chorbaoli, Junewani, Bichua, Tirodi Gneiss, Amgaon Gneissic Complex, Deccan/Alluvial cover).",core,yes (one-hot)
+stratigraphic_unit,Geology,string (categorical),-,"Finer stratigraphic unit; for the Mansar Fm, one of the three documented manganese-ore horizons or non-ore interband.",core,yes (one-hot / target-encode)
+lithology,Geology,string (categorical),-,Dominant rock type(s) of the formation.,core,yes (one-hot)
+host_rock,Geology,string (categorical),-,Host-rock description; flagged '[ore-adjacent facies]' where within a documented Mn horizon.,core,yes (one-hot)
+ore_host_compatibility_score,Geology,float,0-1 score,Synthetic score for how compatible the lithology/formation is with manganese ore hosting.,core,yes
+formation_contact_distance_km,Geology,float,km,Distance to nearest (formation-level) geological contact.,core,yes
+geological_age_ma,Geology,float,million years (Ma),Approximate age of the host formation/complex.,core,yes
+metamorphic_grade,Geology,string (ordinal categorical),-,Low (greenschist) / medium (lower amphibolite) / high (upper amphibolite) / granulite facies.,core,yes (ordinal or one-hot)
+weathering_class,Geology,string (categorical),-,"Fresh/slightly weathered, moderately weathered, or highly weathered/lateritic.",core,yes (one-hot)
+alteration_intensity,Geology,float,0-1 score,Synthetic proxy for hydrothermal/pneumatolytic alteration intensity (felspathisation etc. documented around ore bodies).,core,yes
+geological_complexity_score,Geology,float,0-1 score,Composite structural/lithological heterogeneity score.,core,yes
+distance_to_fault_km,Structural,float,km,Distance to nearest synthetic fault trace.,core,yes
+distance_to_lineament_km,Structural,float,km,Distance to nearest synthetic lineament.,core,yes
+lineament_density_per_sq_km,Structural,float,count/km^2 (proxy),Local lineament density.,core,yes
+lineament_intersection_density,Structural,float,proxy units,Local lineament-intersection density.,core,yes
+shear_zone_proximity_km,Structural,float,km,Distance to nearest synthetic shear/mylonite zone (documented host of epigenetic ore emplacement).,core,yes
+structural_complexity_score,Structural,float,0-1 score,Composite polyphase-deformation complexity proxy.,core,yes
+fold_position,Structural,string (categorical),-,"hinge/closure, limb, or not_applicable.",core,yes (one-hot)
+fold_hinge_proximity_km,Structural,float,km,Distance to nearest synthetic fold-hinge trace.,core,yes
+structural_orientation,Structural,string (categorical),-,"Dominant local structural bearing (NNE-SSW, ENE-WSW, NW-SE, N-S, E-W).",core,yes (one-hot)
+distance_to_major_geological_contact_km,Structural,float,km,Distance to nearest group-level (major) geological contact.,core,yes
+drainage_anomaly_score,Structural,float,0-1 score,Proxy for anomalous/deflected drainage patterns near faults.,core,yes
+elevation_m,Terrain/DEM,float,metres ASL,Synthetic DEM elevation.,core,yes
+slope_deg,Terrain/DEM,float,degrees,Synthetic slope.,core,yes
+aspect_deg,Terrain/DEM,float,degrees (0-360),Synthetic slope aspect.,core,yes (consider sin/cos encoding)
+curvature,Terrain/DEM,float,unitless (z-scored),Synthetic surface curvature (Laplacian-based).,core,yes
+terrain_ruggedness,Terrain/DEM,float,unitless index,Synthetic terrain ruggedness index (TRI-like).,core,yes
+local_relief_m,Terrain/DEM,float,metres,Synthetic local relief.,core,yes
+drainage_density,Terrain/DEM,float,km/km^2 (proxy),Synthetic drainage density.,core,yes
+topographic_position_index,Terrain/DEM,float,unitless (TPI-like),Elevation relative to 1 km smoothed neighbourhood mean.,core,yes
+valley_or_ridge_class,Terrain/DEM,string (categorical),-,"ridge / slope / valley, derived from TPI.",core,yes (one-hot)
+B2,Sentinel-2,float,"surface reflectance (0-1, synthetic)",Blue band (synthetic).,core,yes
+B3,Sentinel-2,float,"surface reflectance (0-1, synthetic)",Green band (synthetic).,core,yes
+B4,Sentinel-2,float,"surface reflectance (0-1, synthetic)",Red band (synthetic).,core,yes
+B5,Sentinel-2,float,"surface reflectance (0-1, synthetic)",Red-edge 1 (synthetic).,core,yes
+B6,Sentinel-2,float,"surface reflectance (0-1, synthetic)",Red-edge 2 (synthetic).,core,yes
+B7,Sentinel-2,float,"surface reflectance (0-1, synthetic)",Red-edge 3 (synthetic).,core,yes
+B8,Sentinel-2,float,"surface reflectance (0-1, synthetic)",NIR (synthetic).,core,yes
+B8A,Sentinel-2,float,"surface reflectance (0-1, synthetic)",Narrow NIR (synthetic).,core,yes
+B11,Sentinel-2,float,"surface reflectance (0-1, synthetic)",SWIR 1 (synthetic).,core,yes
+B12,Sentinel-2,float,"surface reflectance (0-1, synthetic)",SWIR 2 (synthetic).,core,yes
+NDVI,Sentinel-2 derived,float,index (-1 to 1),Normalized Difference Vegetation Index = (B8-B4)/(B8+B4).,core,yes
+NDMI,Sentinel-2 derived,float,index (-1 to 1),Normalized Difference Moisture Index = (B8-B11)/(B8+B11).,core,yes
+MNDWI,Sentinel-2 derived,float,index (-1 to 1),Modified NDWI = (B3-B11)/(B3+B11).,core,yes
+BSI,Sentinel-2 derived,float,index (-1 to 1),Bare Soil Index = ((B11+B4)-(B8+B2))/((B11+B4)+(B8+B2)).,core,yes
+B4_B2_ratio,Sentinel-2 derived,float,ratio,B4/B2 band ratio (ferric-iron-oxide proxy).,core,yes
+B11_B12_ratio,Sentinel-2 derived,float,ratio,B11/B12 band ratio (clay/alteration-mineral proxy).,core,yes
+B12_B8_ratio,Sentinel-2 derived,float,ratio,B12/B8 band ratio.,core,yes
+B11_B8_ratio,Sentinel-2 derived,float,ratio,B11/B8 band ratio.,core,yes
+gossan_alteration_index,Sentinel-2 derived,float,ratio,Composite gossan/alteration proxy = (B4+B11)/(B2+B8).,core,yes
+red_edge_ratio_1,Sentinel-2 derived,float,ratio,B6/B5 red-edge ratio.,core,yes
+red_edge_ratio_2,Sentinel-2 derived,float,ratio,B7/B5 red-edge ratio.,core,yes
+VV,Sentinel-1,float,dB (synthetic),VV-polarised backscatter.,core,yes
+VH,Sentinel-1,float,dB (synthetic),VH-polarised backscatter.,core,yes
+VV_VH_ratio,Sentinel-1 derived,float,dB difference,VV minus VH (dB).,core,yes
+radar_backscatter_mean,Sentinel-1 derived,float,dB,Mean of VV and VH.,core,yes
+radar_texture,Sentinel-1 derived,float,unitless (>=0),Local radar-texture proxy (correlates with terrain ruggedness).,core,yes
+radar_roughness_proxy,Sentinel-1 derived,float,unitless (>=0),Surface-roughness proxy from radar + terrain + lithology.,core,yes
+aster_vnir_swir_proxy,ASTER/multisensor,float,unitless (z-scored),Synthetic ASTER VNIR/SWIR lithological-discrimination proxy.,core,yes
+aster_thermal_lithology_proxy,ASTER/multisensor,float,0-1 score,Synthetic thermal-inertia/lithology proxy (denser rock = higher).,core,yes
+multisensor_spectral_anomaly_score,ASTER/multisensor,float,0-1 (normalised),Composite optical+radar+ASTER anomaly score.,core,yes
+aspect_sin,Terrain/DEM,float,unitless (-1 to 1),sin(aspect_deg in radians); circular encoding of aspect so 0deg and 360deg are treated as identical.,core (engineered),yes - preferred over raw aspect_deg for most models
+aspect_cos,Terrain/DEM,float,unitless (-1 to 1),cos(aspect_deg in radians); paired with aspect_sin for circular encoding.,core (engineered),yes - preferred over raw aspect_deg for most models
+manganese_bearing_horizon_indicator,Geology,int (0/1),binary,1 if sample falls within a documented Mansar Fm manganese horizon (or rare Bichua-flank gondite analogue).,extended-only,yes - but see leakage note in metadata
+gravity_anomaly_proxy,Geophysical,float,"mGal-like (synthetic, unitless)","Synthetic gravity-anomaly proxy (density-contrast based); ASSUMPTION-level, see research-basis file.",extended-only,yes
+horizontal_gradient_magnitude_proxy,Geophysical,float,unitless (>=0),Gradient-magnitude edge-detector proxy on the synthetic gravity field (highlights contacts/faults).,extended-only,yes
+regional_geophysical_anomaly_score,Geophysical,float,unitless (z-scored),Composite geophysical anomaly score.,extended-only,yes
+manganese_mineral_association_score,Mineralogical/knowledge,float,0-1 score,Partial 'expert index' built from geology+structure only (not spectral/geophysical) plus noise.,extended-only,yes
+oxide_mineral_association_score,Mineralogical/knowledge,float,0-1 score,Surface Fe/Mn-oxide alteration association proxy.,extended-only,yes
+gondite_association_score,Mineralogical/knowledge,float,0-1 score,Gondite (Mn-silicate rock) association proxy.,extended-only,yes
+metamorphic_favourability_score,Mineralogical/knowledge,float,0-1 score,Amphibolite-facies 'sweet spot' favourability score.,extended-only,yes
+mineral_system_compatibility_score,Mineralogical/knowledge,float,0-1 score,Composite source-pathway-trap style mineral-systems compatibility score.,extended-only,yes
+legacy_report_evidence_score,Mineralogical/knowledge,float,0-1 score,Proxy for density/quality of historical GSI/MOIL exploration-report coverage.,extended-only,yes
+legacy_report_structural_mention,Mineralogical/knowledge,int (0/1),binary,Whether legacy reports (synthetically) mention structural control here.,extended-only,yes
+legacy_report_host_rock_mention,Mineralogical/knowledge,int (0/1),binary,Whether legacy reports (synthetically) mention host-rock description here.,extended-only,yes
+spectral_mean,Sentinel-2 derived,float,reflectance units,Mean reflectance across the 10 Sentinel-2 bands.,extended-only,yes
+spectral_variance,Sentinel-2 derived,float,reflectance^2,Variance across the 10 Sentinel-2 bands.,extended-only,yes
+spectral_contrast,Sentinel-2 derived,float,reflectance units,Max-min reflectance across the 10 bands.,extended-only,yes
+spectral_anomaly_score,Sentinel-2 derived,float,unitless (>=0),Deviation of local spectral_mean from a coarse (3 km) regional baseline.,extended-only,yes
+mean_B4_500m,Multi-scale neighbourhood,float,reflectance units,Smoothed B4 value at ~500 m window.,extended-only,yes
+std_B4_500m,Multi-scale neighbourhood,float,reflectance units,Local B4 variability at ~500 m window.,extended-only,yes
+mean_B8_500m,Multi-scale neighbourhood,float,reflectance units,Smoothed B8 value at ~500 m window.,extended-only,yes
+mean_B8_1km,Multi-scale neighbourhood,float,reflectance units,Smoothed B8 value at ~1 km window.,extended-only,yes
+std_B8_1km,Multi-scale neighbourhood,float,reflectance units,Local B8 variability at ~1 km window.,extended-only,yes
+spectral_variance_500m,Multi-scale neighbourhood,float,variance-like units,Local spectral heterogeneity at ~500 m window.,extended-only,yes
+lineament_density_500m,Multi-scale neighbourhood,float,proxy units,Lineament density smoothed at ~500 m.,extended-only,yes
+terrain_roughness_500m,Multi-scale neighbourhood,float,unitless index,Terrain ruggedness smoothed at ~500 m.,extended-only,yes
+terrain_roughness_1km,Multi-scale neighbourhood,float,unitless index,Terrain ruggedness smoothed at ~1 km.,extended-only,yes
+structural_complexity_500m,Multi-scale neighbourhood,float,0-1 score,Structural complexity smoothed at ~500 m.,extended-only,yes
+structural_complexity_1km,Multi-scale neighbourhood,float,0-1 score,Structural complexity smoothed at ~1 km.,extended-only,yes
+geology_similarity_1km,Multi-scale neighbourhood,float,0-1 score,Local geological homogeneity proxy at ~1 km.,extended-only,yes
