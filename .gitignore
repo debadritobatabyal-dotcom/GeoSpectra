@@ -1,27 +1,16 @@
-# ==============================================================================
-# Git Ignore - MOIL Manganese Exploration ML System
-# ==============================================================================
-
-# Python Bytecode & Cache
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
-
-# Environments & Dependencies
 .venv/
 venv/
 env/
 ENV/
 env.bak/
 venv.bak/
-
-# Environment Variables & Credentials
 .env
 .env.local
 .env.*.local
-
-# Testing & Coverage
 .pytest_cache/
 .coverage
 .coverage.*
@@ -30,17 +19,11 @@ nosetests.xml
 coverage.xml
 *.cover
 .hypothesis/
-
-# Local Runtime Caches & Databases
 *.db
 *.sqlite
 *.sqlite3
 feature_cache.db
-
-# Jupyter & Notebooks
 .ipynb_checkpoints/
-
-# IDE & Editor Settings
 .vscode/
 .idea/
 *.swp
@@ -48,8 +31,6 @@ feature_cache.db
 *~
 *.sublime-project
 *.sublime-workspace
-
-# Operating System Files
 .DS_Store
 .DS_Store?
 ._*
@@ -57,13 +38,10 @@ feature_cache.db
 .Trashes
 ehthumbs.db
 Thumbs.db
-
-# Build & Packaging
 build/
 dist/
 *.egg-info/
 *.egg
-
-# Temporary / Scratch Outputs
+*.zip
 *audit_results*.json
 scratch/

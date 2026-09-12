@@ -1,21 +1,3 @@
-#!/usr/bin/env python3
-"""
-predict.py
-==========
-MOIL Limited — Manganese Prospectivity Exploration System
-Authoritative Inference Engine for Single-Location Prospectivity Screening.
-
-Pipeline:
-1. Domain Boundary Check (20.95N-22.15N, 79.35E-80.65E).
-2. Authoritative Feature Extraction via feature_pipeline.py (43 features).
-3. Exact 43-feature vector construction in feature_schema.json order.
-4. Deterministic Categorical Encoding using saved integer mappings (-1 for unknown/missing).
-5. Model probability estimation (prospectivity score).
-6. Empirical percentile cutoffs (p80 = Moderate, p95 = High).
-7. IsolationForest applicability scoring (High / Moderate / Low Applicability).
-8. TreeExplainer SHAP top-5 feature attribution (non-causal phrasing).
-"""
-
 from __future__ import annotations
 import os
 import json
@@ -37,14 +19,12 @@ _CACHED_BUNDLE = None
 _CACHED_SCHEMA = None
 _CACHED_EXPLAINER = None
 
-
 def load_feature_schema():
     global _CACHED_SCHEMA
     if _CACHED_SCHEMA is None:
         with open(SCHEMA_PATH, "r") as f:
             _CACHED_SCHEMA = json.load(f)
     return _CACHED_SCHEMA
-
 
 def load_model_bundle(model_path: str = None):
     global _CACHED_BUNDLE, _CACHED_EXPLAINER
@@ -60,21 +40,13 @@ def load_model_bundle(model_path: str = None):
             _CACHED_EXPLAINER = None
     return _CACHED_BUNDLE
 
-
 def check_domain_bounds(lat: float, lon: float, bbox: dict = None) -> bool:
-    """Checks whether coordinates are inside the Sausar Manganese Belt domain."""
     if bbox is None:
         schema = load_feature_schema()
         bbox = schema["study_domain"]
     return (bbox["lat_min"] <= lat <= bbox["lat_max"]) and (bbox["lon_min"] <= lon <= bbox["lon_max"])
 
-
 def encode_vector_for_inference(row_dict: dict, feature_cols: list, cat_cols: list, cat_mappings: dict) -> pd.DataFrame:
-    """
-    Constructs a 1-row DataFrame matching the exact schema order.
-    Encodes categoricals using saved mappings (-1 for missing or unknown).
-    Numeric features preserve NaNs (natively supported by HistGradientBoosting).
-    """
     row_data = {}
     for col in feature_cols:
         val = row_dict.get(col)
@@ -96,9 +68,7 @@ def encode_vector_for_inference(row_dict: dict, feature_cols: list, cat_cols: li
 
     return pd.DataFrame([row_data], columns=feature_cols)
 
-
 def compute_shap_drivers(explainer, model, X_row: pd.DataFrame, feature_cols: list, top_n: int = 5) -> list[dict]:
-    """Computes top-N SHAP contributors with non-causal descriptions."""
     if explainer is None:
         return []
     try:
@@ -135,19 +105,10 @@ def compute_shap_drivers(explainer, model, X_row: pd.DataFrame, feature_cols: li
         LOGGER.warning("SHAP calculation error: %s", e)
         return []
 
-
 def predict_single_location(features: dict, bundle: dict = None) -> dict:
-    """
-    Authoritative single-location prospectivity prediction function.
-
-    Accepts either:
-    1. A dictionary containing 'latitude' and 'longitude' (system automatically extracts real GEE + geology features).
-    2. A complete pre-extracted feature dictionary.
-    """
     schema = load_feature_schema()
     bbox = schema["study_domain"]
 
-    # 1. Validate coordinates
     try:
         lat = float(features.get("latitude"))
         lon = float(features.get("longitude"))
@@ -162,7 +123,6 @@ def predict_single_location(features: dict, bundle: dict = None) -> dict:
             "classification": "INVALID INPUT",
         }
 
-    # 2. Strict Domain Check
     if not check_domain_bounds(lat, lon, bbox):
         return {
             "status": "OUT_OF_STUDY_DOMAIN",
@@ -177,7 +137,6 @@ def predict_single_location(features: dict, bundle: dict = None) -> dict:
             "classification": "OUT OF STUDY DOMAIN",
         }
 
-    # 3. Feature Extraction (if minimal coords provided)
     primary_set = set(schema["primary_features"])
     provided_set = set(features.keys())
     missing_keys = primary_set - provided_set
@@ -204,7 +163,6 @@ def predict_single_location(features: dict, bundle: dict = None) -> dict:
         if "satellite_source" not in full_vector:
             full_vector["satellite_source"] = "provided_in_input"
 
-    # 4. Load Model Bundle
     b = bundle or load_model_bundle()
     model = b["model"]
     feature_cols = b["feature_cols"]
@@ -213,13 +171,10 @@ def predict_single_location(features: dict, bundle: dict = None) -> dict:
     thresholds = b["probability_thresholds"]
     app_info = b.get("applicability", {})
 
-    # 5. Build and encode inference vector
     X_row = encode_vector_for_inference(full_vector, feature_cols, cat_cols, cat_mappings)
 
-    # 6. Predict raw model score
     prob = float(model.predict_proba(X_row)[0, 1])
 
-    # Continuous relative prospectivity score (0–100) via reference distribution percentile rank
     ref_probs = b.get("reference_predictions")
     if ref_probs is not None and len(ref_probs) > 0:
         idx_left = np.searchsorted(ref_probs, prob, side='left')
@@ -228,8 +183,6 @@ def predict_single_location(features: dict, bundle: dict = None) -> dict:
     else:
         prospectivity_score = round(prob * 100.0, 1)
 
-    # 7. Categorize via Relative Prospectivity Scale:
-    # 80-100: VERY HIGH, 60-80: HIGH, 40-60: MODERATE, 20-40: LOW, 0-20: VERY LOW
     if prospectivity_score >= 80.0:
         cat = "VERY HIGH"
     elif prospectivity_score >= 60.0:
@@ -244,7 +197,6 @@ def predict_single_location(features: dict, bundle: dict = None) -> dict:
     mod_cut = thresholds.get("moderate_cutoff", 0.05)
     high_cut = thresholds.get("high_cutoff", 0.75)
 
-    # 8. Evaluate Applicability (IsolationForest) — separate from score
     iso = app_info.get("model")
     if iso is not None:
         try:
@@ -266,7 +218,6 @@ def predict_single_location(features: dict, bundle: dict = None) -> dict:
         app_score = 0.0
         app_status = "HIGH APPLICABILITY"
 
-    # 9. Compute SHAP Contributors
     global _CACHED_EXPLAINER
     if _CACHED_EXPLAINER is None:
         try:
@@ -276,7 +227,6 @@ def predict_single_location(features: dict, bundle: dict = None) -> dict:
 
     top_drivers = compute_shap_drivers(_CACHED_EXPLAINER, model, X_row, feature_cols, top_n=5)
 
-    # Check known occurrence proximity (for contextual display only, NEVER an input feature)
     nearby_mine_info = feature_pipeline.match_known_occurrence(lat, lon)
     if nearby_mine_info is not None:
         known_mine_nearby = True
@@ -287,7 +237,6 @@ def predict_single_location(features: dict, bundle: dict = None) -> dict:
         mine_name = None
         mine_dist_km = None
 
-    # Disclosures & warnings
     warnings = [
         "Spatially validated continuous prospectivity score (0–100) trained on satellite, terrain, and geological features.",
         "Scores represent relative exploration prospectivity, not confirmed manganese concentration or calibrated probability.",
@@ -303,21 +252,19 @@ def predict_single_location(features: dict, bundle: dict = None) -> dict:
         "status": "SUCCESS",
         "latitude": lat,
         "longitude": lon,
-        # Relative Prospectivity Score (0–100)
+
         "prospectivity_score": prospectivity_score,
         "prospectivity_class": cat,
         "prospectivity_category": cat,
         "classification": cat,
-        
-        # Raw model internal metrics (exposed in advanced/debug view)
+
         "raw_model_score": round(prob, 4),
         "raw_model_probability": round(prob, 4),
         "percentile_rank": prospectivity_score,
-        
-        # Backward compatibility
+
         "prospectivity_probability": prob,
         "prospectivity_percentage": prospectivity_score,
-        
+
         "probability_thresholds": {
             "moderate_cutoff": round(mod_cut, 4),
             "high_cutoff": round(high_cut, 4),
@@ -337,7 +284,6 @@ def predict_single_location(features: dict, bundle: dict = None) -> dict:
         "warnings": warnings,
         "model_version": b.get("schema_version", "4.0.0"),
     }
-
 
 if __name__ == "__main__":
     import argparse

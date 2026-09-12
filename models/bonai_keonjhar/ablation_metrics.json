@@ -1,0 +1,30 @@
+{
+  "domain": "bonai_keonjhar",
+  "full_model": {
+    "features_count": 43,
+    "roc_auc": 0.892,
+    "pr_auc": 0.3873,
+    "precision": 0.3134,
+    "recall": 0.6097,
+    "f1_score": 0.414,
+    "balanced_accuracy": 0.7497
+  },
+  "ablated_model_no_coords": {
+    "features_count": 41,
+    "excluded_features": [
+      "latitude",
+      "longitude"
+    ],
+    "roc_auc": 0.8913,
+    "pr_auc": 0.3856,
+    "precision": 0.3212,
+    "recall": 0.6548,
+    "f1_score": 0.431,
+    "balanced_accuracy": 0.7702
+  },
+  "delta": {
+    "roc_auc_difference": 0.0007,
+    "pr_auc_difference": 0.0017
+  },
+  "interpretation": "Spatial holdout ablation testing coordinate dependence."
+}

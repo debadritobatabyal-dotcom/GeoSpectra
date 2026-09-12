@@ -6,10 +6,9 @@ from feature_pipeline import SatelliteUnavailableError
 APP_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "app.py")
 
 def test_login_rejects_empty_credentials():
-    """Verify that clicking Sign In with empty credentials rejects login."""
     at = AppTest.from_file(APP_PATH, default_timeout=30)
     at.run()
-    # Find text inputs
+
     at.text_input[0].input("").run()
     at.text_input[1].input("").run()
     at.button[0].click().run()
@@ -17,32 +16,28 @@ def test_login_rejects_empty_credentials():
     assert len(at.error) > 0
 
 def test_login_accepts_demo_access():
-    """Verify that clicking Demo Access authenticates successfully."""
     at = AppTest.from_file(APP_PATH, default_timeout=30)
     at.run()
-    at.button[1].click().run()  # Demo Access button
+    at.button[1].click().run()
     assert at.session_state["authenticated"] is True
 
 def test_out_of_domain_card_never_shows_percentage():
-    """Verify that out of domain coordinates show guardrail and no percentage."""
     at = AppTest.from_file(APP_PATH, default_timeout=30)
     at.run()
-    at.button[1].click().run()  # Authenticate
-    # Set coordinates to Mumbai (18.92N, 72.83E) directly in session state
+    at.button[1].click().run()
+
     at.session_state.target_lat = 18.9220
     at.session_state.target_lon = 72.8347
     at.run()
-    
-    # Verify OUT OF DOMAIN appears in markdown and no prospectivity % score
+
     markdown_texts = [m.value for m in at.markdown]
     has_ood = any("OUT OF STUDY DOMAIN" in text or "OUT OF DOMAIN" in text for text in markdown_texts)
     assert has_ood is True
-    # Verify no prospectivity score like "83.5%" appears for out of domain
+
     has_pct_score = any("Manganese Prospectivity Score" in text for text in markdown_texts)
     assert has_pct_score is False
 
 def test_prediction_card_renders_for_in_domain_point(monkeypatch):
-    """Verify prediction card renders with prospectivity score when in domain."""
     test_lat, test_lon = 21.8333, 80.2333
     test_feats = {
         "latitude": test_lat, "longitude": test_lon,
@@ -60,7 +55,7 @@ def test_prediction_card_renders_for_in_domain_point(monkeypatch):
 
     at = AppTest.from_file(APP_PATH, default_timeout=30)
     at.run()
-    at.button[1].click().run()  # Authenticate
+    at.button[1].click().run()
     at.session_state.target_lat = test_lat
     at.session_state.target_lon = test_lon
     at.run()
@@ -70,7 +65,6 @@ def test_prediction_card_renders_for_in_domain_point(monkeypatch):
     assert has_score_card is True
 
 def test_tabs_and_top_targets_render():
-    """Verify that all tabs, KPIs, and top exploration targets render without error."""
     test_lat, test_lon = 21.8333, 80.2333
     test_feats = {
         "latitude": test_lat, "longitude": test_lon,
@@ -88,19 +82,118 @@ def test_tabs_and_top_targets_render():
 
     at = AppTest.from_file(APP_PATH, default_timeout=30)
     at.run()
-    at.button[1].click().run()  # Demo Access
-    
-    # Check KPIs
+    at.button[1].click().run()
+
     markdown_texts = [m.value for m in at.markdown]
     assert any("Sausar Manganese Belt" in text for text in markdown_texts)
     assert any("HistGradientBoosting" in text for text in markdown_texts)
-    
-    # Check Top Exploration Targets dataset is loaded
+
     assert any("Top Exploration Targets" in text or "TARGET" in text for text in markdown_texts)
-    
-    # Check Why This Target Is Prospective bars render
+
     assert any("Why This Target is Prospective" in text or "WHY THIS TARGET" in text.upper() for text in markdown_texts)
     assert any("GEOLOGY" in text for text in markdown_texts)
     assert any("SPECTRAL SIGNATURE" in text for text in markdown_texts)
 
+def test_editorial_redesign_components():
+    at = AppTest.from_file(APP_PATH, default_timeout=30)
+    at.run()
+    at.button[1].click().run()
 
+    markdown_texts = [m.value for m in at.markdown]
+
+    assert any("GEOSPECTRA" in text and "NATIONAL MINERAL INTELLIGENCE" in text for text in markdown_texts)
+    assert any("From Earth observation to operational intelligence." in text for text in markdown_texts)
+
+    assert any("Target Priority" in text or "TARGET PRIORITY" in text.upper() for text in markdown_texts)
+    assert any("01" in text for text in markdown_texts)
+
+    assert any("0.892" in text for text in markdown_texts)
+    assert any("80.58%" in text for text in markdown_texts)
+    assert any("99.4" in text for text in markdown_texts)
+
+    assert any("01" in text and "EARTH OBSERVATION" in text for text in markdown_texts)
+    assert any("02" in text and "GEOLOGICAL DATA" in text for text in markdown_texts)
+    assert any("03" in text and "EXPLORATION MODEL" in text for text in markdown_texts)
+    assert any("04" in text and "PRODUCTION MODEL" in text for text in markdown_texts)
+    assert any("05" in text and "EXPLAINABILITY" in text for text in markdown_texts)
+    assert any("06" in text and "DECISION SUPPORT" in text for text in markdown_texts)
+    assert any("07" in text and "SCENARIO SIMULATION" in text for text in markdown_texts)
+
+def test_production_intelligence_tab_renders():
+    at = AppTest.from_file(APP_PATH, default_timeout=30)
+    at.run()
+    at.button[1].click().run()
+
+    markdown_texts = [m.value for m in at.markdown]
+    assert any("Production Intelligence" in text for text in markdown_texts)
+    assert any("XGBoost Expected Production" in text or "XGBoost" in text for text in markdown_texts)
+    assert any("DEMO / SYNTHETIC OPERATIONAL DATA" in text.upper() for text in markdown_texts)
+    assert any("HOW DO WE RECOVER" in text.upper() or "RECOVERY SIMULATOR" in text.upper() for text in markdown_texts)
+
+def test_login_rejects_invalid_email():
+    at = AppTest.from_file(APP_PATH, default_timeout=30)
+    at.run()
+    at.text_input[0].input("invalid-email-address").run()
+    at.button[0].click().run()
+    assert at.session_state["authenticated"] is False
+    assert at.session_state["auth_step"] == "email"
+    assert len(at.error) > 0
+
+def test_login_otp_flow_and_verification():
+    import auth_service
+    test_email = "test.officer@geology.gov.in"
+    at = AppTest.from_file(APP_PATH, default_timeout=30)
+    at.run()
+
+    at.text_input[0].input(test_email).run()
+    at.button[0].click().run()
+    assert at.session_state["auth_step"] == "otp"
+    assert at.session_state["auth_email"] == test_email
+
+    at.text_input[0].input("000000").run()
+    at.button[0].click().run()
+    assert at.session_state["authenticated"] is False
+    assert len(at.error) > 0
+
+    active_code = auth_service.get_active_code_hint(test_email)
+    assert active_code is not None
+    at.text_input[0].input(active_code).run()
+    at.button[0].click().run()
+    assert at.session_state["authenticated"] is True
+    assert at.session_state["user_email"] == test_email
+
+def test_login_otp_change_email():
+    at = AppTest.from_file(APP_PATH, default_timeout=30)
+    at.run()
+    at.text_input[0].input("officer@geology.gov.in").run()
+    at.button[0].click().run()
+    assert at.session_state["auth_step"] == "otp"
+
+    change_btn = [b for b in at.button if "CHANGE" in b.label.upper() or "बदलें" in b.label][0]
+    change_btn.click().run()
+    assert at.session_state["auth_step"] == "email"
+
+def test_login_page_theme_and_language_toggles():
+    at = AppTest.from_file(APP_PATH, default_timeout=30)
+    at.run()
+    assert at.session_state["theme"] == "light"
+    assert at.session_state["language"] == "en"
+
+    thm_radio = [r for r in at.radio if r.key == "login_theme_selector"][0]
+    thm_radio.set_value("🌙 Dark").run()
+    assert at.session_state["theme"] == "dark"
+
+    lng_radio = [r for r in at.radio if r.key == "login_lang_selector"][0]
+    lng_radio.set_value("हिन्दी").run()
+    assert at.session_state["language"] == "hi"
+
+    markdowns = [m.value for m in at.markdown]
+    assert any("जियोस्पेक्ट्रा" in m for m in markdowns)
+
+    lng_radio = [r for r in at.radio if r.key == "login_lang_selector"][0]
+    lng_radio.set_value("EN").run()
+    assert at.session_state["language"] == "en"
+
+    thm_radio = [r for r in at.radio if r.key == "login_theme_selector"][0]
+    thm_radio.set_value("☀️ Light").run()
+    assert at.session_state["theme"] == "light"

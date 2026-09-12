@@ -1,0 +1,109 @@
+{
+  "dataset": "synthetic_production_dataset_fixed.csv",
+  "total_samples": 8000,
+  "train_samples": 5992,
+  "test_samples": 2008,
+  "split_type": "chronological_holdout",
+  "train_date_range": [
+    "2021-01-01",
+    "2023-12-31"
+  ],
+  "test_date_range": [
+    "2024-01-01",
+    "2024-12-31"
+  ],
+  "target_variable": "actual_production_tpd",
+  "models": {
+    "xgboost": {
+      "model_type": "XGBRegressor",
+      "hyperparameters": {
+        "n_estimators": 250,
+        "max_depth": 5,
+        "learning_rate": 0.05,
+        "subsample": 0.85,
+        "colsample_bytree": 0.85,
+        "min_child_weight": 3,
+        "reg_alpha": 0.1,
+        "reg_lambda": 1.0,
+        "random_state": 42,
+        "n_jobs": -1
+      },
+      "metrics": {
+        "mae": 118.09,
+        "rmse": 162.54,
+        "r2": 0.9574
+      },
+      "status": "production_primary"
+    },
+    "random_forest_benchmark": {
+      "model_type": "RandomForestRegressor",
+      "hyperparameters": {
+        "n_estimators": 150,
+        "max_depth": 12,
+        "min_samples_leaf": 2,
+        "random_state": 42,
+        "n_jobs": -1
+      },
+      "metrics": {
+        "mae": 141.16,
+        "rmse": 192.85,
+        "r2": 0.94
+      },
+      "status": "benchmark_comparison"
+    }
+  },
+  "features_count": 51,
+  "features_list": [
+    "total_trucks",
+    "available_trucks",
+    "active_trucks",
+    "total_shovels",
+    "available_shovels",
+    "active_shovels",
+    "truck_availability_pct",
+    "shovel_availability_pct",
+    "truck_utilization_pct",
+    "shovel_utilization_pct",
+    "truck_downtime_hours",
+    "shovel_downtime_hours",
+    "truck_breakdown_events",
+    "shovel_breakdown_events",
+    "maintenance_delay_hours",
+    "haul_distance_km",
+    "average_loaded_travel_time_min",
+    "average_empty_travel_time_min",
+    "average_loading_time_min",
+    "average_dumping_time_min",
+    "average_cycle_time_min",
+    "truck_cycles",
+    "queue_delay_min",
+    "haulage_delay_hours",
+    "operating_hours",
+    "effective_operating_hours",
+    "overall_utilization_pct",
+    "loading_efficiency_pct",
+    "haulage_efficiency_pct",
+    "blasting_delay_hours",
+    "shift_delay_hours",
+    "fragmentation_index",
+    "weather_disruption_hours",
+    "rainfall_mm",
+    "temperature_c",
+    "soil_moisture_index",
+    "ground_condition_index",
+    "ore_feed_tonnes",
+    "ore_grade_pct",
+    "waste_to_ore_ratio",
+    "month",
+    "quarter",
+    "day_of_week_num",
+    "mine_MINE_01",
+    "mine_MINE_02",
+    "mine_MINE_03",
+    "mine_MINE_04",
+    "mine_MINE_05",
+    "mine_MINE_06",
+    "mine_MINE_07",
+    "mine_MINE_08"
+  ]
+}

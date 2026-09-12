@@ -17,14 +17,13 @@ def test_train_infer_schema_identical():
     assert "geological_group" in schema["categorical_features"]
 
 def test_missing_feature_becomes_nan_not_silently_filled():
-    """Verify that missing numeric features are preserved as NaN and not silently filled with medians."""
     with open(SCHEMA_PATH) as f:
         schema = json.load(f)
     feature_cols = schema["primary_features"]
     cat_cols = schema["categorical_features"]
     cat_mappings = {c: {"ridge": 0, "slope": 1, "valley": 2} for c in cat_cols}
 
-    sample_dict = {"latitude": 21.89, "longitude": 80.22}  # only coords, all other features missing
+    sample_dict = {"latitude": 21.89, "longitude": 80.22}
     row_df = encode_vector_for_inference(sample_dict, feature_cols, cat_cols, cat_mappings)
 
     assert len(row_df.columns) == 43
@@ -34,7 +33,6 @@ def test_missing_feature_becomes_nan_not_silently_filled():
     assert not np.isfinite(row_df.loc[0, "elevation_m"])
 
 def test_saved_category_mappings_are_reused():
-    """Verify that known categories map to their deterministic integer index."""
     cat_cols = ["valley_or_ridge_class"]
     cat_mappings = {"valley_or_ridge_class": {"ridge": 2, "slope": 1, "valley": 0}}
     sample_dict = {"valley_or_ridge_class": "ridge"}
@@ -42,7 +40,6 @@ def test_saved_category_mappings_are_reused():
     assert row_df.loc[0, "valley_or_ridge_class"] == 2.0
 
 def test_unknown_category_maps_to_minus_one():
-    """Verify that unknown categorical values map to -1.0."""
     cat_cols = ["valley_or_ridge_class"]
     cat_mappings = {"valley_or_ridge_class": {"ridge": 0, "slope": 1, "valley": 2}}
     sample_dict = {"valley_or_ridge_class": "plateau_canyon"}
@@ -50,7 +47,6 @@ def test_unknown_category_maps_to_minus_one():
     assert row_df.loc[0, "valley_or_ridge_class"] == -1.0
 
 def test_real_vs_synthetic_band_ranges_compatible():
-    """Verify Sentinel-2 reflectance ranges in schema are within physical [0, 1]."""
     with open(SCHEMA_PATH) as f:
         schema = json.load(f)
     for band in ["B2", "B3", "B4", "B5", "B6", "B7", "B8", "B8A", "B11", "B12"]:

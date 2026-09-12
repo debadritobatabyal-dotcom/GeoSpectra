@@ -1,17 +1,6 @@
-#!/usr/bin/env python3
-"""
-authenticate_gee.py
-===================
-Interactive authentication helper for Google Earth Engine (MOIL Exploration System).
-
-Usage:
-    python3 authenticate_gee.py
-"""
-
 import os
 import sys
 
-# Load environment variables from .env if present
 _env_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
 if os.path.exists(_env_file):
     try:

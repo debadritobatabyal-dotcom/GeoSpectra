@@ -1,15 +1,3 @@
-#!/usr/bin/env python3
-"""
-train_model.py
-==============
-MOIL Limited — AI/ML + Space Technology for Manganese Prospectivity Mapping
-Authoritative training pipeline for the Central Indian Sausar Manganese Belt.
-
-Model: sklearn.ensemble.HistGradientBoostingClassifier (default; competes with RF, ET)
-Schema: 43 features (34 numeric + 9 categorical: satellite + terrain + geological map)
-Validation: GroupKFold / GroupShuffleSplit on spatial_block_id (strict spatial grouping).
-"""
-
 import os
 import json
 import joblib
@@ -33,9 +21,7 @@ from sklearn.metrics import (
     confusion_matrix,
 )
 
-
 def get_feature_domain(feature_name: str) -> str:
-    """Categorizes feature into its scientific domain."""
     if feature_name in ['latitude', 'longitude']:
         return 'Spatial Coordinates'
     elif feature_name in [
@@ -63,13 +49,7 @@ def get_feature_domain(feature_name: str) -> str:
     else:
         return 'Other'
 
-
 def encode_categoricals(df: pd.DataFrame, cat_cols: list, mappings: dict = None) -> tuple:
-    """
-    Encodes categorical features deterministically into integers.
-    Derives mappings strictly from training data if mappings is None.
-    Unknown / missing values map to -1.
-    """
     df_out = df.copy()
     if mappings is None:
         mappings = {}
@@ -85,13 +65,10 @@ def encode_categoricals(df: pd.DataFrame, cat_cols: list, mappings: dict = None)
 
     return df_out, mappings
 
-
 def compute_sample_weights(y: np.ndarray) -> np.ndarray:
-    """Computes PU-balanced sample weights."""
     pos_count = np.sum(y == 1)
     neg_count = len(y) - pos_count
     return np.where(y == 1, neg_count / pos_count, 1.0)
-
 
 def main():
     base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -109,18 +86,15 @@ def main():
     print(f"Schema version: {schema['schema_version']}")
     print("=" * 80)
 
-    # 1. Load data
     data_path = os.path.join(base_dir, "data", "dataset", "sausar_manganese_core_features.csv")
     raw_df = pd.read_csv(data_path)
     print(f"[1/9] Loaded {len(raw_df):,} total raw records from {data_path}")
 
-    # Filter POSITIVE and UNLABELLED only (exclude UNCERTAIN)
     clean_df = raw_df[raw_df["label_status"].isin(["POSITIVE", "UNLABELLED"])].copy()
     clean_df["target"] = (clean_df["label_status"] == "POSITIVE").astype(int)
     print(f"      Filtered PU dataset: {len(clean_df):,} samples "
           f"(POSITIVE: {clean_df['target'].sum():,}, UNLABELLED: {(clean_df['target'] == 0).sum():,})")
 
-    # 2. Outer Spatial Holdout Split (GroupShuffleSplit 80/20 on spatial_block_id)
     print("\n[2/9] Creating outer spatial holdout split (80% train / 20% test on spatial_block_id)...")
     gss_outer = GroupShuffleSplit(n_splits=1, test_size=0.20, random_state=42)
     train_idx, test_idx = next(
@@ -137,7 +111,6 @@ def main():
     print(f"      Train set: {len(train_df):,} samples ({len(train_blocks)} spatial blocks)")
     print(f"      Test set:  {len(test_df):,} samples ({len(test_blocks)} spatial blocks)")
 
-    # 3. Categorical encoding (strictly derived from training split only)
     print("\n[3/9] Deriving deterministic categorical integer mappings from training set...")
     X_train_raw = train_df[feature_cols]
     y_train = train_df["target"].values
@@ -151,7 +124,6 @@ def main():
         n_cats = len(cat_mappings[col])
         print(f"      {col}: {n_cats} categories")
 
-    # 4. Multi-Classifier Comparison (Part 12)
     print("\n[4/9] Multi-classifier comparison using 5-fold Spatial GroupKFold...")
     gkf = GroupKFold(n_splits=5)
     groups_train = train_df["spatial_block_id"].values
@@ -221,11 +193,9 @@ def main():
         }
         print(f"      {clf_name}: CV PR-AUC={mean_pr:.4f} (±{std_pr:.4f}), ROC-AUC={mean_roc:.4f}")
 
-    # Select best by PR-AUC
     best_clf_name = max(comparison_results, key=lambda k: comparison_results[k]["mean_pr_auc"])
     print(f"\n   >>> Selected classifier: {best_clf_name} (PR-AUC={comparison_results[best_clf_name]['mean_pr_auc']:.4f})")
 
-    # 5. Hyperparameter grid search for HGB (if selected, otherwise use default)
     print(f"\n[5/9] Hyperparameter tuning for {best_clf_name}...")
     if best_clf_name == "HistGradientBoosting":
         param_grid = []
@@ -276,14 +246,13 @@ def main():
         best_res = grid_results[0]
         best_params = best_res["params"]
     else:
-        # For RF/ET, use the default parameters
+
         best_params = {}
         best_res = {"mean_pr_auc": comparison_results[best_clf_name]["mean_pr_auc"], "std_pr_auc": comparison_results[best_clf_name].get("std_pr_auc", 0)}
 
     print(f"\n   Best hyperparameters: {best_params}")
     print(f"   Best CV PR-AUC: {best_res['mean_pr_auc']:.4f}")
 
-    # 6. Manual Early Stopping (HGB only)
     if best_clf_name == "HistGradientBoosting":
         print("\n[6/9] Manual early stopping on internal spatial validation split...")
         gss_inner = GroupShuffleSplit(n_splits=1, test_size=0.20, random_state=42)
@@ -337,7 +306,6 @@ def main():
         frozen_max_iter = None
         print("\n[6/9] Skipping early stopping (not applicable to tree ensembles).")
 
-    # 7. Fit Final Model on Entire Outer Training Set
     print(f"\n[7/9] Fitting final {best_clf_name} model on all {len(train_df):,} training samples...")
     w_outer_train = compute_sample_weights(y_train)
 
@@ -362,7 +330,7 @@ def main():
             random_state=42, n_jobs=-1,
         )
         final_model.fit(X_train_encoded, y_train)
-    else:  # ExtraTrees
+    else:
         final_model = ExtraTreesClassifier(
             n_estimators=500, max_depth=20, min_samples_leaf=5,
             max_features="sqrt", class_weight="balanced",
@@ -370,7 +338,6 @@ def main():
         )
         final_model.fit(X_train_encoded, y_train)
 
-    # 8. Evaluate on Untouched Outer Spatial Holdout
     print("\n[8/9] Evaluating final model on held-out spatial blocks...")
     y_test_proba = final_model.predict_proba(X_test_encoded)[:, 1]
     y_test_pred = (y_test_proba >= 0.5).astype(int)
@@ -383,11 +350,9 @@ def main():
     bal_acc = float(balanced_accuracy_score(y_test, y_test_pred))
     cm = confusion_matrix(y_test, y_test_pred).tolist()
 
-    # Empirical percentile cutoffs on test predictions
     p80 = float(np.percentile(y_test_proba, 80))
     p95 = float(np.percentile(y_test_proba, 95))
 
-    # Score distributions
     test_pos_proba = y_test_proba[y_test == 1]
     test_unl_proba = y_test_proba[y_test == 0]
     train_proba = final_model.predict_proba(X_train_encoded)[:, 1]
@@ -416,7 +381,6 @@ def main():
     print(f"   Discrimination:     {np.median(test_pos_proba)/max(np.median(test_unl_proba),1e-9):.1f}x")
     print("=" * 60)
 
-    # Permutation feature importance
     print("\nComputing permutation feature importances (20 repeats)...")
     perm = permutation_importance(
         final_model, X_test_encoded, y_test,
@@ -444,7 +408,6 @@ def main():
     for _, row in imp_df.head(15).iterrows():
         print(f"   {row['feature']:<35s} {row['domain']:<30s} {row['importance_pct']:>7.2f}%")
 
-    # Applicability model
     print("\nFitting IsolationForest applicability model on training features...")
     iso_forest = IsolationForest(random_state=42, contamination="auto", n_jobs=-1)
     iso_forest.fit(X_train_encoded.fillna(0.0))
@@ -453,7 +416,6 @@ def main():
     p05_applicability = float(np.percentile(train_scores, 5))
     print(f"Applicability cutoffs: Moderate={p20_applicability:.4f}, Low={p05_applicability:.4f}")
 
-    # 9. Save geological lookup grid for inference
     print("\n[9/9] Building geological lookup grid for inference...")
     geo_cols = [
         'geological_group', 'geological_formation', 'stratigraphic_unit',
@@ -467,7 +429,6 @@ def main():
     geo_lookup_df.to_csv(geo_lookup_path, index=False)
     print(f"Saved geological lookup grid: {len(geo_lookup_df)} unique locations to {geo_lookup_path}")
 
-    # Benchmark means for UI
     pos_mask = train_df["target"] == 1
     unl_mask = train_df["target"] == 0
     s2_bands = ['B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B8A', 'B11', 'B12']
@@ -476,7 +437,6 @@ def main():
     radar_features = ['VV', 'VH', 'VV_VH_ratio', 'radar_backscatter_mean', 'radar_texture']
     radar_positive_mean = train_df.loc[pos_mask, radar_features].mean().to_dict()
 
-    # Model Bundle Serialization
     model_bundle = {
         "model": final_model,
         "feature_cols": feature_cols,
@@ -524,7 +484,6 @@ def main():
     joblib.dump(model_bundle, model_file)
     print(f"\nSaved authoritative model bundle to: {model_file}")
 
-    # Write metrics.json
     metrics_payload = {
         "model_name": best_clf_name,
         "features_type": f"{len(feature_cols)} features (satellite + terrain + geological map)",
@@ -575,7 +534,6 @@ def main():
         json.dump(metrics_payload, f, indent=2)
     print(f"Saved metrics to: {metrics_file}")
     print("=" * 80)
-
 
 if __name__ == "__main__":
     main()
