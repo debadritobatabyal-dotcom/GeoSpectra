@@ -387,13 +387,21 @@ def generate_css(theme_name=None, is_auth=False, b64_bg_map=""):
 
         /* Top Navigation: Translucent Minimal Navigation */
         .stTabs [data-baseweb="tab-list"] {{
-            gap: 32px !important;
+            display: flex !important;
+            width: 100% !important;
+            justify-content: space-between !important;
+            gap: 12px !important;
             border-bottom: 1px solid var(--border) !important;
             margin-bottom: 24px !important;
-            padding-bottom: 6px !important;
+            padding-bottom: 0 !important;
         }}
         .stTabs [data-baseweb="tab"] {{
-            padding: 12px 10px !important;
+            flex: 1 1 0px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            text-align: center !important;
+            padding: 14px 10px !important;
             font-family: 'Space Grotesk', sans-serif !important;
             font-weight: 700 !important;
             font-size: 1.12rem !important;
@@ -402,6 +410,7 @@ def generate_css(theme_name=None, is_auth=False, b64_bg_map=""):
             border: none !important;
             background: transparent !important;
             transition: all 0.2s ease !important;
+            white-space: nowrap !important;
         }}
         .stTabs [data-baseweb="tab"] p,
         .stTabs [data-baseweb="tab"] span {{
@@ -409,10 +418,12 @@ def generate_css(theme_name=None, is_auth=False, b64_bg_map=""):
             font-size: 1.12rem !important;
             font-weight: 700 !important;
             line-height: 1.25 !important;
+            text-align: center !important;
         }}
         .stTabs [data-baseweb="tab"]:hover {{
             color: var(--text-primary) !important;
-            background: transparent !important;
+            background: {t['accent_warm_subtle']} !important;
+            border-radius: 8px 8px 0 0 !important;
         }}
         .stTabs [aria-selected="true"] {{
             color: var(--text-primary) !important;
@@ -426,6 +437,20 @@ def generate_css(theme_name=None, is_auth=False, b64_bg_map=""):
             font-size: 1.12rem !important;
             font-weight: 800 !important;
             color: var(--text-primary) !important;
+        }}
+        .stTabs [data-baseweb="tab-highlight"] {{
+            background-color: var(--accent-blue) !important;
+            height: 3px !important;
+        }}
+        @media (max-width: 900px) {{
+            .stTabs [data-baseweb="tab-list"] {{
+                overflow-x: auto !important;
+                flex-wrap: nowrap !important;
+            }}
+            .stTabs [data-baseweb="tab"] {{
+                flex: 0 0 auto !important;
+                padding: 10px 14px !important;
+            }}
         }}
 
         /* Floating Intelligence Panels & Glass Containers */
