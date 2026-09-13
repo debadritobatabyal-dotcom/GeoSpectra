@@ -7,6 +7,9 @@ import numpy as np
 import pandas as pd
 import shap
 
+import feature_pipeline
+from feature_pipeline import SatelliteUnavailableError
+
 LOGGER = logging.getLogger(__name__)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -130,20 +133,97 @@ def compute_shap_drivers(explainer, model, X_row: pd.DataFrame, feature_cols: li
         LOGGER.warning("SHAP calculation error: %s", e)
         return []
 
-def bonai_keonjhar_predict(features_or_lat, lon=None, bundle=None) -> dict:
+def extract_bonai_keonjhar_features(
+    lat: float,
+    lon: float,
+    use_gee: bool = True,
+    allow_offline_fallback: bool = True,
+) -> tuple[dict, str, dict]:
+    """
+    Extracts multi-sensor and geological features for a Bonai–Keonjhar coordinate.
+    Attempts live Google Earth Engine extraction for Sentinel-2 optical, Sentinel-1 SAR,
+    and SRTM DEM geomorphometry.
+    If GEE fails:
+      - If allow_offline_fallback is True: falls back to the local geological baseline grid.
+      - If allow_offline_fallback is False: raises SatelliteUnavailableError.
+    """
+    sat_features = None
+    sat_source = "Offline Baseline Grid"
+
+    if use_gee:
+        cached = feature_pipeline.get_cached_features(lat, lon)
+        if cached:
+            sat_features = {
+                k: cached[k] for k in cached if k in [
+                    'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B8A', 'B11', 'B12',
+                    'NDVI', 'NDMI', 'MNDWI', 'BSI', 'B4_B2_ratio', 'B11_B12_ratio',
+                    'B12_B8_ratio', 'B11_B8_ratio', 'gossan_alteration_index',
+                    'red_edge_ratio_1', 'red_edge_ratio_2', 'VV', 'VH', 'VV_VH_ratio',
+                    'radar_backscatter_mean', 'radar_texture', 'elevation_m',
+                    'slope_deg', 'curvature', 'terrain_ruggedness', 'local_relief_m',
+                    'topographic_position_index', 'valley_or_ridge_class'
+                ]
+            }
+            sat_source = "Google Earth Engine (Cache Hit)"
+        else:
+            try:
+                sat_features = feature_pipeline.extract_real_gee_satellite(lat, lon)
+                sat_source = "Google Earth Engine (Live Sentinel-2 / Sentinel-1 / SRTM)"
+            except Exception as e:
+                LOGGER.warning("GEE satellite extraction failed for Bonai–Keonjhar (%f, %f): %s", lat, lon, e)
+                if not allow_offline_fallback:
+                    if isinstance(e, SatelliteUnavailableError):
+                        raise
+                    raise SatelliteUnavailableError(f"Google Earth Engine telemetry failed: {e}")
+                sat_features = None
+                sat_source = f"Offline Baseline Grid (GEE Unreachable: {e})"
+
+    geo_data = lookup_bonai_keonjhar_geology(lat, lon)
+    full_vector = {"latitude": lat, "longitude": lon}
+
+    if sat_features is not None:
+        full_vector.update(sat_features)
+
+    for k, v in geo_data.items():
+        if k not in full_vector or pd.isna(full_vector[k]):
+            full_vector[k] = v
+
+    if sat_features is not None and sat_source.startswith("Google Earth Engine (Live"):
+        try:
+            feature_pipeline.save_cached_features(
+                lat, lon, full_vector,
+                geology_source="Bonai–Keonjhar Geological Crosswalk / GSI Map",
+                satellite_source=sat_source
+            )
+        except Exception as e:
+            LOGGER.warning("Could not cache features for (%f, %f): %s", lat, lon, e)
+
+    return full_vector, sat_source, geo_data
+
+def bonai_keonjhar_predict(
+    features_or_lat,
+    lon=None,
+    bundle=None,
+    use_live_satellite: bool = True,
+    allow_offline_fallback: bool = True,
+) -> dict:
     if isinstance(features_or_lat, dict):
         features = features_or_lat
         b = lon if isinstance(lon, dict) else (bundle or load_bonai_keonjhar_bundle())
+        lat_in = features.get("latitude")
+        lon_in = features.get("longitude")
     else:
-        features = {"latitude": features_or_lat, "longitude": lon}
+        features = None
+        lat_in = features_or_lat
+        lon_in = lon
         b = bundle or load_bonai_keonjhar_bundle()
 
     schema = load_bonai_keonjhar_schema()
     bbox = schema["study_domain"]
 
     try:
-        lat = float(features.get("latitude"))
-        lon = float(features.get("longitude"))
+        lat = float(lat_in)
+        lon = float(lon_in)
     except (TypeError, ValueError):
         return {
             "status": "INVALID_INPUT",
@@ -171,18 +251,39 @@ def bonai_keonjhar_predict(features_or_lat, lon=None, bundle=None) -> dict:
             "classification": "OUT OF STUDY DOMAIN",
         }
 
+    # Prepare feature vector (live GEE extraction, cache, or input)
+    if features is not None and "B2" in features and "B4" in features and "elevation_m" in features:
+        geo_data = lookup_bonai_keonjhar_geology(lat, lon)
+        full_vector = features.copy()
+        for k, v in geo_data.items():
+            if k not in full_vector or pd.isna(full_vector[k]):
+                full_vector[k] = v
+        sat_source = features.get("satellite_source", "Provided in input")
+    else:
+        try:
+            full_vector, sat_source, geo_data = extract_bonai_keonjhar_features(
+                lat, lon, use_gee=use_live_satellite, allow_offline_fallback=allow_offline_fallback
+            )
+        except SatelliteUnavailableError as e:
+            return {
+                "status": "SATELLITE_UNAVAILABLE",
+                "message": f"Satellite data retrieval failed: {str(e)}. The system refuses to fabricate synthetic satellite observations.",
+                "latitude": lat,
+                "longitude": lon,
+                "study_domain": bbox,
+                "domain": "bonai_keonjhar",
+                "sector": "Joda–Barbil / Bonai–Keonjhar, Odisha",
+                "prospectivity_score": None,
+                "raw_model_score": None,
+                "classification": "SATELLITE UNAVAILABLE",
+            }
+
     model = b["model"]
     feature_cols = b["feature_cols"]
     cat_cols = b["cat_cols"]
     cat_mappings = b["cat_mappings"]
     thresholds = b.get("probability_thresholds", {})
     app_info = b.get("applicability", {})
-
-    geo_data = lookup_bonai_keonjhar_geology(lat, lon)
-    full_vector = features.copy()
-    for k, v in geo_data.items():
-        if k not in full_vector or pd.isna(full_vector[k]):
-            full_vector[k] = v
 
     X_row = encode_vector_for_inference(full_vector, feature_cols, cat_cols, cat_mappings)
 
@@ -260,7 +361,10 @@ def bonai_keonjhar_predict(features_or_lat, lon=None, bundle=None) -> dict:
         "features": X_row.iloc[0].to_dict(),
         "top_shap_drivers": top_drivers,
         "top_drivers": top_drivers,
-        "geological_unit": geo_data,
+        "geological_unit": geo_data.get("geological_formation", "Koira Group"),
+        "geology_context": geo_data,
+        "geology_source": "Bonai–Keonjhar Geological Crosswalk / GSI Map",
+        "satellite_source": sat_source,
         "disclaimer": disclaimer,
         "study_domain": bbox,
     }

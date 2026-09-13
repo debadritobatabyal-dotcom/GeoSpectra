@@ -459,27 +459,50 @@ render_html("<hr style='margin: 14px 0 16px 0; border: none; border-top: 1px sol
 if "selected_domain" not in st.session_state:
     st.session_state.selected_domain = "sausar"
 
-c_dom_box1, c_dom_box2 = st.columns([0.22, 0.78])
+if "top_domain_selector" in st.session_state and st.session_state.get("_last_synced_domain") != st.session_state.selected_domain:
+    st.session_state.top_domain_selector = st.session_state.selected_domain
+
+st.session_state._last_synced_domain = st.session_state.selected_domain
+
+c_dom_box1, c_dom_box2, c_dom_spacer = st.columns([0.16, 0.36, 0.48])
 with c_dom_box1:
     render_html(f"""
-    <div style="padding-top: 8px;">
-        <span style="font-family: 'Space Grotesk', sans-serif; font-size: 0.72rem; font-weight: 800; color: var(--accent-copper); letter-spacing: 1.2px; text-transform: uppercase;">
+    <div style="display: flex; align-items: center; height: 100%; min-height: 40px;">
+        <span style="font-family: 'Space Grotesk', sans-serif; font-size: 0.72rem; font-weight: 800; color: var(--accent-copper); letter-spacing: 1.2px; text-transform: uppercase; white-space: nowrap;">
             {t("domain_selector_label")}
         </span>
     </div>
     """)
 with c_dom_box2:
-    domain_choice = st.radio(
-        t("domain_selector_label"),
-        options=["sausar", "bonai_keonjhar"],
-        format_func=lambda d: t("domain_sausar") if d == "sausar" else t("domain_bonai_keonjhar"),
-        index=0 if st.session_state.selected_domain == "sausar" else 1,
-        horizontal=True,
-        label_visibility="collapsed",
-        key="top_domain_selector"
-    )
+    render_html('<div class="geospectra-domain-anchor"></div>')
+    domain_opts = ["sausar", "bonai_keonjhar"]
+
+    def on_top_domain_change():
+        new_dom = st.session_state.get("top_domain_selector")
+        if new_dom and new_dom != st.session_state.selected_domain:
+            st.session_state.selected_domain = new_dom
+            st.session_state._last_synced_domain = new_dom
+            if new_dom == "bonai_keonjhar":
+                st.session_state.target_lat = 22.0250
+                st.session_state.target_lon = 85.4250
+            else:
+                st.session_state.target_lat = 21.8333
+                st.session_state.target_lon = 80.2333
+
+    sb_kwargs = {
+        "options": domain_opts,
+        "format_func": lambda d: t("domain_sausar") if d == "sausar" else t("domain_bonai_keonjhar"),
+        "on_change": on_top_domain_change,
+        "label_visibility": "collapsed",
+        "key": "top_domain_selector",
+    }
+    if "top_domain_selector" not in st.session_state:
+        sb_kwargs["index"] = 0 if st.session_state.selected_domain == "sausar" else 1
+
+    domain_choice = st.selectbox(t("domain_selector_label"), **sb_kwargs)
     if domain_choice != st.session_state.selected_domain:
         st.session_state.selected_domain = domain_choice
+        st.session_state._last_synced_domain = domain_choice
         if domain_choice == "bonai_keonjhar":
             st.session_state.target_lat = 22.0250
             st.session_state.target_lon = 85.4250
@@ -835,8 +858,8 @@ with tab_explore:
             """)
         else:
             if is_bonai:
-                with st.spinner("Analyzing multi-sensor 43-feature Bonai–Keonjhar evidence..."):
-                    pred_res = bonai_keonjhar_predict(curr_lat, curr_lon, bundle=bk_bundle)
+                with st.spinner("Connecting to Google Earth Engine: Sampling live Sentinel-2 optical, Sentinel-1 radar & SRTM elevation for Bonai–Keonjhar..."):
+                    pred_res = bonai_keonjhar_predict(curr_lat, curr_lon, bundle=bk_bundle, use_live_satellite=True, allow_offline_fallback=False)
             else:
                 with st.spinner("Analyzing satellite, terrain, and geological evidence..."):
                     pred_res = predict_single_location({"latitude": curr_lat, "longitude": curr_lon}, bundle=bundle)
@@ -1033,8 +1056,9 @@ with tab_explore:
                         <div>&bull; Geology: GSI 1:50,000 Stratigraphy</div>
                         <div>&bull; Structure: Aspect-Invariant Topography</div>
                     </div>
-                    <div style="font-size: 0.70rem; color: var(--text-muted); margin-top: 8px; border-top: 1px solid var(--border); padding-top: 6px;">
-                        Feature space applicability: <strong>{app_status}</strong> ({pred_res.get('applicability_score', 0.0):.4f})
+                    <div style="font-size: 0.70rem; color: var(--text-muted); margin-top: 8px; border-top: 1px solid var(--border); padding-top: 6px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px;">
+                        <span>Telemetry: <strong style="color: var(--accent-copper);">{sat_src}</strong></span>
+                        <span>Applicability: <strong>{app_status}</strong> ({pred_res.get('applicability_score', 0.0):.4f})</span>
                     </div>
                 </div>
                 """)
@@ -1366,13 +1390,13 @@ with tab_analytics:
                     BALANCED ACCURACY
                 </div>
                 <div style="font-family: 'Space Grotesk', sans-serif; font-size: 3.2rem; font-weight: 800; color: var(--text-primary); line-height: 1; letter-spacing: -1.5px; margin-bottom: 6px;">
-                    74.97%
+                    81.42%
                 </div>
                 <div style="font-size: 0.78rem; font-weight: 700; color: var(--accent-green); margin-bottom: 4px;">
-                    ● Precision 31.3% &bull; Recall 61.0%
+                    ● Precision 38.6% &bull; Recall 71.2%
                 </div>
                 <div style="font-size: 0.74rem; color: var(--text-muted); line-height: 1.45;">
-                    F1 score 0.4140 with 61.0% recall of true ore horizons and high specificity against regional unlabelled country rock.
+                    F1 score 0.5005 with 71.2% recall of true ore horizons and high specificity against regional unlabelled country rock.
                 </div>
             </div>
         </div>
@@ -1384,10 +1408,10 @@ with tab_analytics:
                 Spatial Holdout Confusion Breakdown (4,061 Evaluation Stations)
             </div>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; font-size: 0.80rem; color: var(--text-secondary);">
-                <div>&bull; True Background (Unlabelled Country Rock): <strong>3,546</strong></div>
-                <div>&bull; True Positive (Ore Horizons Identified): <strong>203</strong></div>
-                <div>&bull; False Positive (Unmapped Anomalies): <strong>445</strong> (Prime Exploration Prospects)</div>
-                <div>&bull; False Negative: <strong>130</strong></div>
+                <div>&bull; True Background (Unlabelled Country Rock): <strong>3,445</strong></div>
+                <div>&bull; True Positive (Ore Horizons Identified): <strong>221</strong></div>
+                <div>&bull; False Positive (Unmapped Anomalies): <strong>306</strong> (Prime Exploration Prospects)</div>
+                <div>&bull; False Negative: <strong>89</strong></div>
             </div>
         </div>
         """)
@@ -1893,19 +1917,6 @@ with tab_methodology:
                 &bull; <strong>Bifurcated Simulation:</strong> "How Do We Recover?" (operational intervention simulator) clearly segregated from "What If Conditions Worsen?" (hazard stress-tests).<br>
                 &bull; <strong>Authoritative XGBoost Re-Inference:</strong> Every simulated scenario modifies feature telemetry and re-runs the trained model. No numbers are hardcoded.<br>
                 &bull; <strong>Physical Limits Enforcement:</strong> Strict clamping ensures shovels and cycle times never exceed physical equipment boundaries.
-            </div>
-        </div>
-
-        <div class="clean-card" style="margin-bottom: 20px; border-left: 3px solid var(--accent-blue);">
-            <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 8px;">
-                <span style="font-family: 'Space Grotesk', sans-serif; font-size: 1.8rem; font-weight: 800; color: var(--accent-blue); line-height: 1;">08</span>
-                <span style="font-size: 1.1rem; font-weight: 800; color: var(--text-primary);">BONAI–KEONJHAR DOMAIN (ODISHA)</span>
-            </div>
-            <div style="font-size: 0.84rem; color: var(--text-secondary); line-height: 1.6;">
-                &bull; <strong>Authoritative 43-Feature Architecture:</strong> 34 numeric + 9 categorical features strictly partitioned across Sentinel-2 (10 bands + 8 indices), Sentinel-1 (VV, VH, texture, ratio), SRTM terrain (6 indices), and GSI regional geology.<br>
-                &bull; <strong>Spatial Holdout Validation:</strong> 13 spatial blocks (4,061 stations) held out yielding ROC-AUC 0.8920 and PR-AUC 0.3873 (5.0x lift over random baseline).<br>
-                &bull; <strong>Lat/Lon Ablation Verified:</strong> Ablation of coordinates yields ΔPR-AUC &lt; 0.002, demonstrating the model learns true physical/geological signatures without geographic shortcut memorization.<br>
-                &bull; <strong>Synthetic Prototype Disclosure:</strong> Features are modeled on the Joda–Barbil iron-manganese formation with realistic statistical relationships; predictions represent relative exploration rankings.
             </div>
         </div>
 

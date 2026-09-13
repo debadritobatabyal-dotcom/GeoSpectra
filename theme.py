@@ -708,12 +708,73 @@ def generate_css(theme_name=None, is_auth=False, b64_bg_map=""):
             -webkit-text-fill-color: {t['text_muted']} !important;
             opacity: 1 !important;
         }}
-        /* Selectbox styling */
+        /* Study Domain Dropdown Container & Control */
+        div[data-testid="stColumn"]:has(.geospectra-domain-anchor) div[data-testid="stSelectbox"],
+        .element-container:has(.geospectra-domain-anchor) + .element-container div[data-testid="stSelectbox"] {{
+            width: 100% !important;
+            max-width: 350px !important;
+        }}
+        div[data-testid="stColumn"]:has(.geospectra-domain-anchor) div[data-baseweb="select"] > div,
+        .element-container:has(.geospectra-domain-anchor) + .element-container div[data-baseweb="select"] > div {{
+            background-color: {t['surface']} !important;
+            border: 1px solid {t['border']} !important;
+            border-radius: 9999px !important;
+            min-height: 38px !important;
+            height: 38px !important;
+            padding: 0 14px 0 16px !important;
+            display: flex !important;
+            align-items: center !important;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+            backdrop-filter: blur(12px) !important;
+            -webkit-backdrop-filter: blur(12px) !important;
+            cursor: pointer !important;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+        }}
+        div[data-testid="stColumn"]:has(.geospectra-domain-anchor) div[data-baseweb="select"] > div:hover,
+        .element-container:has(.geospectra-domain-anchor) + .element-container div[data-baseweb="select"] > div:hover {{
+            border-color: rgba(255, 107, 0, 0.45) !important;
+            box-shadow: 0 2px 10px rgba(255, 107, 0, 0.12) !important;
+        }}
+        div[data-testid="stColumn"]:has(.geospectra-domain-anchor) div[data-baseweb="select"] > div:focus-within,
+        .element-container:has(.geospectra-domain-anchor) + .element-container div[data-baseweb="select"] > div:focus-within {{
+            border-color: {t['accent_warm']} !important;
+            box-shadow: 0 0 0 1px {t['accent_warm']}, 0 2px 10px rgba(255, 107, 0, 0.20) !important;
+        }}
+        div[data-testid="stColumn"]:has(.geospectra-domain-anchor) div[data-baseweb="select"] div[role="combobox"],
+        div[data-testid="stColumn"]:has(.geospectra-domain-anchor) div[data-baseweb="select"] span,
+        div[data-testid="stColumn"]:has(.geospectra-domain-anchor) div[data-baseweb="select"] div,
+        div[data-testid="stColumn"]:has(.geospectra-domain-anchor) div[data-baseweb="select"] p,
+        .element-container:has(.geospectra-domain-anchor) + .element-container div[data-baseweb="select"] span {{
+            font-family: 'Space Grotesk', sans-serif !important;
+            font-size: 0.74rem !important;
+            font-weight: 700 !important;
+            letter-spacing: 0.8px !important;
+            text-transform: uppercase !important;
+            color: {t['text_primary']} !important;
+            white-space: nowrap !important;
+            overflow: hidden !important;
+            text-overflow: ellipsis !important;
+        }}
+        div[data-testid="stColumn"]:has(.geospectra-domain-anchor) div[data-baseweb="select"] svg,
+        .element-container:has(.geospectra-domain-anchor) + .element-container div[data-baseweb="select"] svg {{
+            fill: {t['text_secondary']} !important;
+            width: 15px !important;
+            height: 15px !important;
+            opacity: 0.8 !important;
+            transition: fill 0.2s ease, opacity 0.2s ease !important;
+        }}
+        div[data-testid="stColumn"]:has(.geospectra-domain-anchor) div[data-baseweb="select"] > div:hover svg,
+        .element-container:has(.geospectra-domain-anchor) + .element-container div[data-baseweb="select"] > div:hover svg {{
+            fill: {t['accent_warm']} !important;
+            opacity: 1 !important;
+        }}
+
+        /* General Selectbox styling */
         div[data-baseweb="select"] > div {{
             background-color: {t['input_bg']} !important;
             border: 1px solid {t['input_border']} !important;
             color: {t['input_color']} !important;
-            border-radius: 6px !important;
+            border-radius: 8px !important;
         }}
         div[data-baseweb="select"] span,
         div[data-baseweb="select"] div,
@@ -723,18 +784,66 @@ def generate_css(theme_name=None, is_auth=False, b64_bg_map=""):
         div[data-baseweb="select"] svg {{
             fill: {t['text_secondary']} !important;
         }}
-        div[data-baseweb="popover"], div[data-baseweb="menu"] {{
-            background-color: {t['input_bg']} !important;
-            color: {t['input_color']} !important;
-            border: 1px solid {t['input_border']} !important;
+
+        /* Floating Popover Dropdown Menu */
+        div[data-baseweb="popover"] {{
+            background-color: {t['surface']} !important;
+            border: 1px solid {t['border']} !important;
+            border-radius: 12px !important;
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45), 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+            backdrop-filter: blur(16px) !important;
+            -webkit-backdrop-filter: blur(16px) !important;
+            overflow: hidden !important;
+            padding: 0 !important;
+            margin-top: 4px !important;
         }}
-        div[data-baseweb="menu"] li,
-        div[data-baseweb="menu"] p {{
-            color: {t['input_color']} !important;
+        div[data-baseweb="menu"],
+        div[data-baseweb="popover"] ul,
+        div[data-baseweb="popover"] ul[role="listbox"],
+        div[data-baseweb="popover"] ul[data-testid="stSelectboxVirtualDropdown"] {{
+            background: transparent !important;
+            background-color: transparent !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            border: none !important;
         }}
-        div[data-baseweb="menu"] li:hover {{
+        div[data-baseweb="popover"] li[role="option"] {{
+            font-family: 'Space Grotesk', sans-serif !important;
+            font-size: 0.74rem !important;
+            font-weight: 700 !important;
+            letter-spacing: 0.8px !important;
+            text-transform: uppercase !important;
+            color: {t['text_primary']} !important;
+            box-sizing: border-box !important;
+            height: 40px !important;
+            line-height: 40px !important;
+            padding: 0 16px !important;
+            margin: 0 !important;
+            cursor: pointer !important;
+            transition: background-color 0.15s ease, color 0.15s ease !important;
+            display: flex !important;
+            align-items: center !important;
+        }}
+        div[data-baseweb="popover"] li[role="option"]:hover,
+        div[data-baseweb="popover"] li[role="option"][aria-highlighted="true"] {{
             background-color: {t['accent_warm_subtle']} !important;
             color: {t['accent_warm']} !important;
+        }}
+        div[data-baseweb="popover"] li[role="option"][aria-selected="true"] {{
+            background-color: {t['accent_warm_subtle']} !important;
+            color: {t['accent_warm']} !important;
+            border-left: 3px solid {t['accent_warm']} !important;
+            font-weight: 800 !important;
+            padding-left: 13px !important;
+            padding-right: 32px !important;
+        }}
+        div[data-baseweb="popover"] li[role="option"][aria-selected="true"]::after {{
+            content: "✓";
+            position: absolute;
+            right: 16px;
+            color: {t['accent_warm']};
+            font-weight: 900;
+            font-size: 0.82rem;
         }}
         [data-testid="stExpander"] {{
             background-color: {t['expander_bg']} !important;

@@ -197,3 +197,53 @@ def test_login_page_theme_and_language_toggles():
     thm_radio = [r for r in at.radio if r.key == "login_theme_selector"][0]
     thm_radio.set_value("☀️ Light").run()
     assert at.session_state["theme"] == "light"
+
+def test_study_domain_selectbox_switching():
+    at = AppTest.from_file(APP_PATH, default_timeout=30)
+    at.run()
+    at.button[1].click().run()
+    assert at.session_state["authenticated"] is True
+    assert at.session_state["selected_domain"] == "sausar"
+
+    domain_select = [s for s in at.selectbox if s.key == "top_domain_selector"][0]
+    assert domain_select.value == "sausar"
+
+    domain_select.select("bonai_keonjhar").run()
+    assert at.session_state["selected_domain"] == "bonai_keonjhar"
+    assert at.session_state["target_lat"] == 22.0250
+    assert at.session_state["target_lon"] == 85.4250
+
+    markdowns_bonai = [m.value for m in at.markdown]
+    assert any("Bonai–Keonjhar" in m for m in markdowns_bonai)
+    assert any("19,421 Stations" in m or "19,421 संदर्भ स्थल" in m for m in markdowns_bonai)
+
+    domain_select = [s for s in at.selectbox if s.key == "top_domain_selector"][0]
+    domain_select.select("sausar").run()
+    assert at.session_state["selected_domain"] == "sausar"
+    assert at.session_state["target_lat"] == 21.8333
+    assert at.session_state["target_lon"] == 80.2333
+
+    markdowns_sausar = [m.value for m in at.markdown]
+    assert any("Sausar Belt" in m or "सॉसार बेल्ट" in m for m in markdowns_sausar)
+    assert any("11 MOIL Localities" in m or "11 प्रमाणित स्थल" in m for m in markdowns_sausar)
+
+def test_study_domain_css_and_single_source_of_truth():
+    import theme
+    css_dark = theme.generate_css("dark")
+    css_light = theme.generate_css("light")
+
+    assert "geospectra-domain-anchor" in css_dark
+    assert "geospectra-domain-anchor" in css_light
+    assert 'div[data-baseweb="popover"]' in css_dark
+    assert 'div[data-baseweb="popover"]' in css_light
+    assert 'border-radius: 9999px !important;' in css_dark
+    assert 'max-width: 350px !important;' in css_dark
+    assert '✓' in css_dark
+    assert '✓' in css_light
+    # Verify no position: relative on option items (which causes react-window gap bugs)
+    assert 'position: relative !important;' not in css_dark
+    assert 'position: relative !important;' not in css_light
+    assert 'height: 40px !important;' in css_dark
+    assert 'padding: 0 !important;' in css_dark
+
+
