@@ -387,21 +387,28 @@ def generate_css(theme_name=None, is_auth=False, b64_bg_map=""):
 
         /* Top Navigation: Translucent Minimal Navigation */
         .stTabs [data-baseweb="tab-list"] {{
-            gap: 28px !important;
+            gap: 32px !important;
             border-bottom: 1px solid var(--border) !important;
             margin-bottom: 24px !important;
-            padding-bottom: 4px !important;
+            padding-bottom: 6px !important;
         }}
         .stTabs [data-baseweb="tab"] {{
-            padding: 10px 6px !important;
+            padding: 12px 10px !important;
             font-family: 'Space Grotesk', sans-serif !important;
-            font-weight: 600 !important;
-            font-size: 0.90rem !important;
-            letter-spacing: 0.5px !important;
+            font-weight: 700 !important;
+            font-size: 1.12rem !important;
+            letter-spacing: 0.4px !important;
             color: {t['tab_inactive_color']} !important;
             border: none !important;
             background: transparent !important;
             transition: all 0.2s ease !important;
+        }}
+        .stTabs [data-baseweb="tab"] p,
+        .stTabs [data-baseweb="tab"] span {{
+            font-family: 'Space Grotesk', sans-serif !important;
+            font-size: 1.12rem !important;
+            font-weight: 700 !important;
+            line-height: 1.25 !important;
         }}
         .stTabs [data-baseweb="tab"]:hover {{
             color: var(--text-primary) !important;
@@ -409,9 +416,16 @@ def generate_css(theme_name=None, is_auth=False, b64_bg_map=""):
         }}
         .stTabs [aria-selected="true"] {{
             color: var(--text-primary) !important;
-            font-weight: 700 !important;
-            border-bottom: 2px solid var(--accent-blue) !important;
+            font-weight: 800 !important;
+            border-bottom: 3px solid var(--accent-blue) !important;
             background: transparent !important;
+        }}
+        .stTabs [aria-selected="true"] p,
+        .stTabs [aria-selected="true"] span {{
+            font-family: 'Space Grotesk', sans-serif !important;
+            font-size: 1.12rem !important;
+            font-weight: 800 !important;
+            color: var(--text-primary) !important;
         }}
 
         /* Floating Intelligence Panels & Glass Containers */
